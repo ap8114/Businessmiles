@@ -6,7 +6,9 @@ const LogisticsPage = () => {
     <div style={{ backgroundColor: '#f5f0da', fontFamily: 'Arial, sans-serif', paddingBottom: '60px' }}>
       {/* Header */}
       <Container fluid style={{ backgroundColor: '#fff', padding: '60px 20px', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#292929' }}>
+        <h2 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#292929',  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>
           Boost your <span style={{ color: '#f7a900' }}>logistics</span> operations with
           <br />
           <span style={{ color: '#ffd600' }}>smarter</span> supply chain technology

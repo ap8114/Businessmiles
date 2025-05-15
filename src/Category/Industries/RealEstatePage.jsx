@@ -21,7 +21,10 @@ const RealEstatePage = () => {
               color: '#292929',
               fontWeight: '700',
               fontSize: '2.5rem',
-              marginBottom: '10px'
+              marginBottom: '10px',
+                background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"
             }}>
               🔹 Real Estate & Property Tech
             </h2>

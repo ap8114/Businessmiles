@@ -13,7 +13,9 @@ const CyberSecurityAdvisory = () => {
         textAlign: "center",
         boxShadow: "0 4px 12px rgba(0,0,0,0.1)"
       }}>
-        <h1 style={{ color: "#000", fontWeight: "bold", fontSize: "32px" }}>🔐 Cybersecurity & Compliance</h1>
+        <h1 style={{ color: "#000", fontWeight: "bold", fontSize: "32px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>🔐 Cybersecurity & Compliance</h1>
         <p style={{ color: "#222", fontSize: "18px", marginTop: "15px", maxWidth: "800px", margin: "auto" }}>
           Security is not an add-on — it’s the foundation. We help you stay secure, compliant, and ahead of risks with trusted frameworks like ISO 27001, GDPR, HIPAA, and NIST.
         </p>

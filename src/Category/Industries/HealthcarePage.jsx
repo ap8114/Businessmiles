@@ -6,7 +6,9 @@ const HealthcarePage = () => {
     <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#fff', color: '#333' }}>
       {/* Header Section */}
       <div style={{ backgroundColor: '#fcb900', padding: '60px 20px', textAlign: 'center' }}>
-        <h1 style={{ color: '#000', fontWeight: 'bold' }}>Healthcare & Life Sciences</h1>
+        <h1 style={{ color: '#000', fontWeight: 'bold',  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>Healthcare & Life Sciences</h1>
         <p style={{ fontSize: '1.2rem', color: '#333' }}>
           Secure, compliant systems that improve care and efficiency.
         </p>

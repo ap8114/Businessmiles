@@ -26,7 +26,9 @@ const IndustryReportsAndGuides = () => {
           {/* Right Content Section */}
           <Col md={9} style={{ padding: "50px 40px", color: "#333" }}>
             <section style={{ marginBottom: "60px" }}>
-              <h2 style={{ fontWeight: "800", fontSize: "28px", marginBottom: "15px", color: "#1a1a1a" }}>📊 Industry Reports & Trend Guides</h2>
+              <h2 style={{ fontWeight: "800", fontSize: "28px", marginBottom: "15px", color: "#1a1a1a" ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>📊 Industry Reports & Trend Guides</h2>
               <p style={{ fontSize: "17px", lineHeight: "1.6" }}>
                 Stay informed. Stay competitive. From cloud adoption and AI tools to digital transformation trends and compliance changes —
                 our research-backed reports keep you ahead of the curve.

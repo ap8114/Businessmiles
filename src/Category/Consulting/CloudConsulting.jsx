@@ -8,7 +8,9 @@ const CloudConsulting = () => {
         {/* Header */}
         <Row className="text-center mb-4">
           <Col>
-            <h2 style={{ color: "#f9c31f", fontWeight: "bold", fontSize: "32px" }}>
+            <h2 style={{ color: "#f9c31f", fontWeight: "bold", fontSize: "32px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>
               ☁ Cloud & Infrastructure Consulting
             </h2>
             <p style={{ fontSize: "18px", color: "#333", marginTop: "10px" }}>

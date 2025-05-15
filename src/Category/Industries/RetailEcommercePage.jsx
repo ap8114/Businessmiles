@@ -16,7 +16,9 @@ const RetailEcommercePage = () => {
       <Container fluid style={{ padding: '60px 15px 40px' }}>
         <Row className="align-items-center">
           <Col md={7}>
-            <h2 style={{ color: '#292929', fontWeight: '700', fontSize: '2.5rem' }}>
+            <h2 style={{ color: '#292929', fontWeight: '700', fontSize: '2.5rem',  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>
               🛒 Retail & E-Commerce
             </h2>
             <p style={{ fontSize: '1.2rem', color: '#555' }}>

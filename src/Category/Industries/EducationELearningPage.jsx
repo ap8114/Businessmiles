@@ -21,7 +21,9 @@ const EducationELearningPage = () => {
         borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px'
       }}>
-        <h2 style={{ fontWeight: '700', fontSize: '2.4rem' }}>🎓 Education & E-Learning</h2>
+        <h2 style={{ fontWeight: '700', fontSize: '2.4rem' ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>🎓 Education & E-Learning</h2>
         <p style={{ fontSize: '1.1rem', maxWidth: '700px', margin: '10px auto' }}>
           Learning made digital. Engagement made easy.
         </p>
