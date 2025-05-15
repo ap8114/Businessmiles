@@ -5,10 +5,11 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="text-dark position-relative pt-5">
+    <footer className="text-dark position-relative pt-5 ">
       {/* Background Wave Image */}
       <div
         style={{
@@ -36,13 +37,12 @@ const Footer = () => {
           >
             Let’s build something great together
           </h4>
-          
         </div>
 
-        {/* Logo & Sections */}
+        {/* All Columns in Single Row */}
         <div className="row text-start mt-5">
-          {/* Logo & Company */}
-          <div className="col-md-3 mb-4">
+          {/* Logo & Company & Resources */}
+          <div className="col-lg-2 col-md-4 mb-4">
             <img
               src="https://www.milesit.com/themes/custom/miles/logo.svg"
               alt="Miles IT"
@@ -58,69 +58,136 @@ const Footer = () => {
               <li>Colors</li>
               <li>Templates</li>
             </ul>
-            <h6 className="fw-bold mt-3">Resources</h6>
-            <ul className="list-unstyled small">
-              <li>Case Studies</li>
-              <li>Blog</li>
-              <li>Cybersecurity Alerts</li>
-              <li>Ultimate Guides</li>
-            </ul>
           </div>
 
           {/* Services */}
-          <div className="col-md-3 mb-4">
+          <div className="col-lg-2 col-md-4 mb-4 " >
             <h6 className="fw-bold">Services</h6>
             <ul className="list-unstyled small">
-              <li>Managed IT Services</li>
-              <li>Co-Managed IT Services</li>
-              <li>Software Development</li>
-              <li>Custom Websites</li>
-              <li>Digital Marketing</li>
-              <li>IT Support</li>
-              <li>Cybersecurity</li>
-              <li>Systems Integration</li>
-              <li>Cloud Computing & Migrations</li>
-              <li>Striven</li>
+              <li className='list-unstyled'>
+                <Link to="/customsoftwaredevelopment">
+                  Custom Software Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/CloudInfrastructure">
+                  Cloud Infrastructure & DevOps
+                </Link>
+              </li>
+              <li>
+                <Link to="/WebECommerceDevelopment">
+                  Web & E-Commerce Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/DigitalMarketing">
+                  Digital Marketing & Growth Strategy
+                </Link>
+              </li>
+              <li>
+                <Link to="/ConsultingPage">
+                  Technology & Business Consulting
+                </Link>
+              </li>
+              <li>
+                <Link to="/EndToEndSupport">End-to-End Support</Link>
+              </li>
             </ul>
           </div>
 
           {/* Consulting */}
-          <div className="col-md-3 mb-4">
+          <div className="col-lg-2 col-md-4 mb-4">
             <h6 className="fw-bold">Consulting</h6>
             <ul className="list-unstyled small">
-              <li>IT Consulting</li>
-              <li>Business Transformation</li>
-              <li>Growth & Strategy Planning</li>
-              <li>IT Regulatory Compliance</li>
-              <li>Mergers & Acquisitions</li>
-              <li>Technology Risk Assessment</li>
-              <li>Operations</li>
-              <li>Marketing Brand Strategy</li>
-              <li>Sales</li>
-              <li>Recruiting & Staffing</li>
+              <li>
+                <Link to="/ITStrategySection">IT Strategy & Roadmapping</Link>
+              </li>
+              <li>
+                <Link to="/CloudConsulting">
+                  Cloud & Infrastructure Consulting
+                </Link>
+              </li>
+              <li>
+                <Link to="/CyberSecurityAdvisory">
+                  Cybersecurity & Compliance Advisory
+                </Link>
+              </li>
+              <li>
+                <Link to="/DigitalTransformationConsulting">
+                  Digital Transformation Consulting
+                </Link>
+              </li>
+              <li>
+                <Link to="/FeasibilityConsultingPageAlt">
+                  FeasibilityConsultingPageAlt
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Industries */}
-          <div className="col-md-3 mb-4">
+          <div className="col-lg-6 col-md-12 mb-4">
             <h6 className="fw-bold">Industries</h6>
-            <ul className="list-unstyled small">
-              <li>Healthcare & Medical</li>
-              <li>Logistics & Distribution</li>
-              <li>Finance & Insurance</li>
-              <li>Professional Services</li>
-              <li>Manufacturing</li>
-              <li>Real Estate</li>
-              <li>Retail & Ecommerce</li>
-              <li>Construction & Contracting</li>
-              <li>Engineering & Architecture</li>
-              <li>Legal & Law Firms</li>
-              <li>Private Equity</li>
-              <li>Education</li>
-              <li>Non-Profit & Government</li>
-              <li>Science & Research</li>
-              <li>Entertainment & Hospitality</li>
-            </ul>
+            <div className="row">
+              <div className="col-6">
+                <ul className="list-unstyled small ">
+                  <li>
+                    <Link to="/HealthcarePage">Healthcare & Life Sciences</Link>
+                  </li>
+                  <li>
+                    <Link to="/LogisticsPage">Logistics & Supply Chain</Link>
+                  </li>
+                  <li>
+                    <Link to="/FinancePage">Finance & Insurance</Link>
+                  </li>
+                  <li>
+                    <Link to="/RealEstatePage">
+                      Real Estate & Property Tech
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/RetailEcommercePage">Retail & E-Commerce</Link>
+                  </li>
+                  <li>
+                    <Link to="/ConstructionContractingPage">
+                      Construction & Contracting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/EducationELearningPage">
+                      Education & E-Learning
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/LegalServicesPage">
+                      Legal & Professional Services
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-lg-6 col-md-12 mb-4">
+                <h6 className="fw-bold ">Resources</h6>
+                <ul className="list-unstyled small">
+                  <li>
+                    <Link to="/CaseStudiesSpotlight">Case Studies</Link>
+                  </li>
+                  <li>
+                    <Link to="/CybersecurityAlertsLight">
+                      Cybersecurity Alerts
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/IndustryReportsAndGuides">
+                      Industry Reports & Trend Guides
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/BlogAndInsights">Blog & Insights</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 

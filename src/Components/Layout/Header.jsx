@@ -79,36 +79,59 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/customsoftwaredevelopment" className="dropdown-item" href="#">
+                    <Link
+                      to="/customsoftwaredevelopment"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Custom Software Development
                     </Link>
                   </li>
                   <li>
-                    <Link to='./CloudInfrastructure' className="dropdown-item" href="#">
+                    <Link
+                      to="./CloudInfrastructure"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Cloud Infrastructure & DevOps
                     </Link>
                   </li>
                   <li>
-                    <Link to='/WebECommerceDevelopment' className="dropdown-item" href="#">
+                    <Link
+                      to="/WebECommerceDevelopment"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Web & E-Commerce Development
                     </Link>
                   </li>
                   <li>
-                    <Link to='/DigitalMarketing' className="dropdown-item" href="#">
+                    <Link
+                      to="/DigitalMarketing"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Digital Marketing & Growth Strategy
                     </Link>
                   </li>
                   <li>
-                    <Link to='/ConsultingPage' className="dropdown-item" href="#">
+                    <Link
+                      to="/ConsultingPage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Technology & Business Consulting
                     </Link>
                   </li>
                   <li>
-                    <Link to='/EndToEndSupport' className="dropdown-item" href="#">
+                    <Link
+                      to="/EndToEndSupport"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       End-to-End Support
                     </Link>
                   </li>
-                  
                 </ul>
               </li>
 
@@ -122,31 +145,50 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to='/ITStrategySection' className="dropdown-item" href="#">
+                    <Link
+                      to="/ITStrategySection"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       IT Strategy & Roadmapping
                     </Link>
                   </li>
                   <li>
-                    <Link to='/CloudConsulting' className="dropdown-item" href="#">
+                    <Link
+                      to="/CloudConsulting"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Cloud & Infrastructure Consulting
                     </Link>
                   </li>
-                   <li>
-                    <Link to='/CyberSecurityAdvisory' className="dropdown-item" href="#">
-                       <li>
-                    <a className="dropdown-item" href="#">
-                       Cybersecurity & Compliance Advisory
-                    </a>
-                  </li>
-                    </Link>
-                  </li>
-                   <li>
-                    <Link to='/DigitalTransformationConsulting' className="dropdown-item" href="#">
+                
+                      <li>
+                        <Link
+                          to="/CyberSecurityAdvisory"
+                          className="dropdown-item"
+                          href="#"
+                        >
+                          Cybersecurity & Compliance Advisory
+                        </Link>
+                      </li>
+                    
+                  
+                  <li>
+                    <Link
+                      to="/DigitalTransformationConsulting"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Digital Transformation Consulting
                     </Link>
                   </li>
-                <li>
-                    <Link to='/FeasibilityConsultingPageAlt' className="dropdown-item" href="#">
+                  <li>
+                    <Link
+                      to="/FeasibilityConsultingPageAlt"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       FeasibilityConsultingPageAlt
                     </Link>
                   </li>
@@ -163,42 +205,70 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to='/HealthcarePage' className="dropdown-item" href="#">
+                    <Link
+                      to="/HealthcarePage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Healthcare & Life Sciences
                     </Link>
                   </li>
                   <li>
-                    <Link to='/LogisticsPage' className="dropdown-item" href="#">
+                    <Link
+                      to="/LogisticsPage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Logistics & Supply Chain
                     </Link>
                   </li>
-                   <li>
-                    <Link to='/FinancePage' className="dropdown-item" href="#">
+                  <li>
+                    <Link to="/FinancePage" className="dropdown-item" href="#">
                       Finance & Insurance
                     </Link>
                   </li>
-                   <li>
-                    <Link to='/RealEstatePage' className="dropdown-item" href="#">
+                  <li>
+                    <Link
+                      to="/RealEstatePage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Real Estate & Property Tech
                     </Link>
                   </li>
-                   <li>
-                    <Link to='/RetailEcommercePage' className="dropdown-item" href="#">
+                  <li>
+                    <Link
+                      to="/RetailEcommercePage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Retail & E-Commerce
                     </Link>
                   </li>
-                   <li>
-                    <Link to='/ConstructionContractingPage' className="dropdown-item" href="#">
+                  <li>
+                    <Link
+                      to="/ConstructionContractingPage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Construction & Contracting
                     </Link>
                   </li>
                   <li>
-                    <Link to='/EducationELearningPage' className="dropdown-item" href="#">
+                    <Link
+                      to="/EducationELearningPage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Education & E-Learning
                     </Link>
                   </li>
                   <li>
-                    <Link to='/LegalServicesPage' className="dropdown-item" href="#">
+                    <Link
+                      to="/LegalServicesPage"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Legal & Professional Services
                     </Link>
                   </li>
@@ -215,22 +285,38 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to='/CaseStudiesSpotlight' className="dropdown-item" href="#">
+                    <Link
+                      to="/CaseStudiesSpotlight"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Case Studies
                     </Link>
                   </li>
                   <li>
-                    <Link to='/CybersecurityAlertsLight' className="dropdown-item" href="#">
+                    <Link
+                      to="/CybersecurityAlertsLight"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Cybersecurity Alerts
                     </Link>
                   </li>
-                   <li>
-                    <Link to='/IndustryReportsAndGuides' className="dropdown-item" href="#">
+                  <li>
+                    <Link
+                      to="/IndustryReportsAndGuides"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Industry Reports & Trend Guides
                     </Link>
                   </li>
-                   <li>
-                    <Link to='/BlogAndInsights' className="dropdown-item" href="#">
+                  <li>
+                    <Link
+                      to="/BlogAndInsights"
+                      className="dropdown-item"
+                      href="#"
+                    >
                       Blog & Insights
                     </Link>
                   </li>
@@ -241,17 +327,17 @@ const Header = () => {
             {/* Right Buttons */}
             {/* Right Buttons */}
             <div className="d-none d-lg-flex align-items-center gap-2">
-            <Button
-  variant="warning"
-  className="fw-normal px-2 py-0"
-  style={{
-    background: "linear-gradient(to right, #FFD700, #FF8C00)",
-    border: "none",
-    color: "#333",
-  }}
->
-  Contact Us
-</Button>
+              <Button
+                variant="warning"
+                className="fw-normal px-2 py-0"
+                style={{
+                  background: "linear-gradient(to right, #FFD700, #FF8C00)",
+                  border: "none",
+                  color: "#333",
+                }}
+              >
+                Contact Us
+              </Button>
               <Button variant="light" className="border">
                 <FaSearch />
               </Button>
@@ -275,7 +361,10 @@ const Header = () => {
           <Modal.Body>
             <ul className="list-unstyled">
               <li>
-                <Link to="/Whoweare" className="text-dark d-block py-2 fw-semibold text-decoration-none">
+                <Link
+                  to="/Whoweare"
+                  className="text-dark d-block py-2 fw-semibold text-decoration-none"
+                >
                   Who We Are
                 </Link>
               </li>
