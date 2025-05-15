@@ -13,7 +13,8 @@ const RetailEcommercePage = () => {
   return (
     <div style={{ backgroundColor: '#fdfaf3', fontFamily: 'Segoe UI, sans-serif' }}>
       {/* Hero Section */}
-      <Container fluid style={{ padding: '60px 15px 40px',backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+      <Container fluid style={{    borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',  padding: '60px 15px 40px',backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover' }}>
         <Row className="align-items-center">
           <Col md={7}>

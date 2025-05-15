@@ -323,9 +323,6 @@ const Header = () => {
                 </ul>
               </li>
             </ul>
-
-            {/* Right Buttons */}
-            {/* Right Buttons */}
             <div className="d-none d-lg-flex align-items-center gap-2">
               <Button
                 variant="warning"

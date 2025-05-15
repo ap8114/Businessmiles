@@ -65,22 +65,9 @@ const ITStrategySection = () => {
           </Col>
         </Row>
 
-        <Row className="justify-content-center mt-4">
-          <Button
-            style={{
-              backgroundColor: "#f9c31f",
-              border: "none",
-              padding: "12px 30px",
-              borderRadius: "30px",
-              color: "#000",
-              fontWeight: "bold",
-              fontSize: "16px",
-              boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-            }}
-          >
-            Contact Us
-          </Button>
-        </Row>
+     
+          
+       
       </Container>
     </div>
   );

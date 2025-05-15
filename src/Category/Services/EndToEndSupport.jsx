@@ -8,7 +8,8 @@ const EndToEndSupport = () => {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', background: '#fff9f0', padding: '3rem 0' }}>
       <Container >
-        <div className='py-3' style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        <div className='py-3' style={{    borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',  backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover'}}>
         {/* Section Title */}
         <h2 style={{ color: '#2b2b2b', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center',background: "linear-gradient(to right, #FFD700, #333333)",
@@ -46,13 +47,7 @@ const EndToEndSupport = () => {
 
         {/* Call To Action */}
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-          <h4 style={{ fontWeight: 'bold', color: '#2b2b2b' }}>📞 Ready to Transform?</h4>
-          <p style={{ color: darkGray, marginBottom: '1.5rem' }}>
-            Let’s talk about your business goals — and how the right technology can accelerate them.
-          </p>
-
-          <p style={{ fontWeight: 'bold', color: '#333' }}>📩 hello@yourcompany.com</p>
-          <p style={{ fontWeight: 'bold', color: '#333' }}>📞 +91-XXXXXXXXXX</p>
+        
 
           <Button
             style={{ backgroundColor: themeColor, border: 'none', color: '#fff', padding: '0.75rem 1.5rem', fontWeight: '600', fontSize: '1rem', borderRadius: '0.5rem' }}

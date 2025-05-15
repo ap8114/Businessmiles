@@ -8,7 +8,8 @@ export default function WhoWeAre() {
       
 
       {/* We Make Tech Simple */}
-      <Container className="py-5 text-center" style={{backgroundImage:'url("https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg")'}}>
+      <Container className="py-5 text-center" style={{   borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',  backgroundImage:'url("https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg")'}}>
         <h2 style={{ fontWeight: 'bold' ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"}}>We make technology simple.</h2>
@@ -81,7 +82,6 @@ export default function WhoWeAre() {
       {/* Footer CTA */}
       <Container className="text-center py-5">
         <h4>Let’s build something great together</h4>
-        <Button variant="warning">Contact Us</Button>
       </Container>
 
    

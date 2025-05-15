@@ -12,6 +12,8 @@ export default function CustomSoftwareDevelopment() {
           padding: "60px 20px",
           textAlign: "center",
           color: "#333",
+           borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',
           backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')"
         }}
       >
@@ -66,19 +68,7 @@ export default function CustomSoftwareDevelopment() {
 
       {/* Contact Button */}
       <div className="text-center mb-5">
-        <button
-          className="btn"
-          style={{
-            backgroundColor: "#ffb400",
-            color: "#fff",
-            padding: "12px 30px",
-            fontWeight: "bold",
-            borderRadius: "30px",
-            border: "none",
-          }}
-        >
-          Contact Us
-        </button>
+        
       </div>
       <section style={{ backgroundColor: '#fdf8ed', padding: '60px 0' }}>
       <Container>
@@ -127,23 +117,12 @@ export default function CustomSoftwareDevelopment() {
               </Card.Body>
             </Card>
           </Col>
+          
         </Row>
 
-        <Row className="justify-content-center mt-4">
-          <Button
-            style={{
-              backgroundColor: '#ffb703',
-              border: 'none',
-              color: '#2b2b2b',
-              fontWeight: '600',
-              padding: '10px 30px',
-              fontSize: '1rem',
-              borderRadius: '25px'
-            }}
-          >
-            Learn More
-          </Button>
-        </Row>
+        
+          
+        
       </Container>
     </section>
     </div>

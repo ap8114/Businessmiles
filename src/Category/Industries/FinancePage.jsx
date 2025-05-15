@@ -6,7 +6,8 @@ const FinancePage = () => {
     <div style={{ backgroundColor: '#f5f0da', padding: '60px 0', fontFamily: 'Segoe UI, sans-serif' }}>
       {/* Intro Section */}
       <Container>
-        <Row style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        <Row style={{ borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',    backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover'}} className='py-5'>
           <Col md={6}>
             <div style={{ borderLeft: '5px solid #f7a900', paddingLeft: '20px', marginBottom: '30px' }}>
@@ -59,25 +60,13 @@ const FinancePage = () => {
       <div style={{
         backgroundColor: '#f7a900',
         marginTop: '60px',
-        padding: '40px 20px',
+        padding: '25px 20px',
         textAlign: 'center',
         color: '#fff'
       }}>
         <h4 style={{ fontWeight: '700', fontSize: '1.5rem' }}>
           Your clients demand security. We deliver it by design.
         </h4>
-        <Button
-          style={{
-            backgroundColor: '#292929',
-            border: 'none',
-            padding: '10px 30px',
-            borderRadius: '30px',
-            marginTop: '20px',
-            fontWeight: '600'
-          }}
-        >
-          Let's Talk
-        </Button>
       </div>
     </div>
   );

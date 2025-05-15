@@ -5,7 +5,8 @@ const LogisticsPage = () => {
   return (
     <div style={{ backgroundColor: '#f5f0da', fontFamily: 'Arial, sans-serif', paddingBottom: '60px' }}>
       {/* Header */}
-      <Container fluid style={{ backgroundColor: '#fff', padding: '60px 20px', textAlign: 'center',backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+      <Container fluid style={{ backgroundColor: '#fff', padding: '60px 20px', textAlign: 'center', borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',  backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover' }}>
         <h2 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#292929',  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
@@ -84,19 +85,7 @@ const LogisticsPage = () => {
         <p style={{ fontSize: '1.2rem', color: '#292929' }}>
           We build logistics software that moves as fast as you do.
         </p>
-        <Button
-          style={{
-            backgroundColor: '#f7a900',
-            borderColor: '#f7a900',
-            padding: '10px 30px',
-            fontSize: '1rem',
-            fontWeight: '600',
-            borderRadius: '30px',
-            marginTop: '10px'
-          }}
-        >
-          Contact Us
-        </Button>
+       
       </Container>
     </div>
   );
