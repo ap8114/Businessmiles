@@ -7,7 +7,7 @@ const CloudConsulting = () => {
       <Container>
         {/* Header */}
         <Row className="text-center mb-4 py-5" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover'}}>
+        backgroundSize:'cover',}}>
           <Col>
             <h2 style={{ color: "#f9c31f", fontWeight: "bold", fontSize: "32px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",

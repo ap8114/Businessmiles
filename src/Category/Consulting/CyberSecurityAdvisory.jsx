@@ -8,12 +8,14 @@ const CyberSecurityAdvisory = () => {
       <div style={{
         background: "linear-gradient(135deg, #f9c31f 0%, #ffe382 100%)",
         padding: "50px 30px",
-        borderRadius: "20px",
+       
         margin: "0 5%",
         textAlign: "center",
         boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
         backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover'
+        backgroundSize:'cover',
+                borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',
       }}>
         <h1 style={{ color: "#000", fontWeight: "bold", fontSize: "32px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",

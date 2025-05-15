@@ -13,7 +13,7 @@ const ITStrategySection = () => {
     >
       <Container>
         <Row className="justify-content-center text-center mb-5 py-3" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover'}}>
+        backgroundSize:'cover',}}>
           <Col lg={8}>
             <h2
               style={{
@@ -22,7 +22,7 @@ const ITStrategySection = () => {
                 color: "#f9c31f",
                 background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent"}}
+            WebkitTextFillColor: "transparent",}}
             >
               📊 IT Strategy & Roadmapping
             </h2>
