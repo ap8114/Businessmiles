@@ -3,9 +3,10 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 const DigitalMarketing = () => {
   return (
-    <div style={{ backgroundColor: '#fff' }}>
+    <div style={{ backgroundColor: '#fff', }}>
       {/* Header Section */}
-      <Container className="text-center py-5">
+      <Container className="text-center py-5" style={{   backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'}}>
         <h2>
           <span style={{ color: '#c59f00', fontWeight: 'bold' }}>Digital Marketing</span> & Growth Strategy
         </h2>

@@ -3,7 +3,8 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 const IndustryReportsAndGuides = () => {
   return (
-    <div style={{ backgroundColor: "#fcfcfc", padding: "70px 20px", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}>
+    <div style={{ backgroundColor: "#fcfcfc", padding: "70px 20px", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover' }}>
       <Container style={{ maxWidth: "900px", backgroundColor: "#ffffff", borderRadius: "20px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)", overflow: "hidden" }}>
         <Row>
           {/* Left Vertical Colored Bar with Icons */}

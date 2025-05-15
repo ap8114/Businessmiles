@@ -7,11 +7,14 @@ const EndToEndSupport = () => {
 
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', background: '#fff9f0', padding: '3rem 0' }}>
-      <Container>
+      <Container >
+        <div className='py-3' style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'}}>
         {/* Section Title */}
         <h2 style={{ color: '#2b2b2b', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center',background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent" }}>
+            WebkitTextFillColor: "transparent" ,
+            }}>
           <span style={{WebkitTextFillColor: "transparent" }} >🔁</span> End-to-End Support
         </h2>
 
@@ -38,6 +41,7 @@ const EndToEndSupport = () => {
               </Card.Body>
             </Card>
           ))}
+        </div>
         </div>
 
         {/* Call To Action */}

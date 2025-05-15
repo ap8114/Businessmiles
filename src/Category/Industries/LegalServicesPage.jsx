@@ -15,9 +15,11 @@ const LegalServicesPage = () => {
       {/* Banner */}
       <div style={{
         backgroundColor: '#1a1a1a',
-        color: '#fff',
+        color: 'black',
         padding: '60px 20px',
-        textAlign: 'left'
+        textAlign: 'left',
+        backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'
       }}>
         <Container>
           <Row>

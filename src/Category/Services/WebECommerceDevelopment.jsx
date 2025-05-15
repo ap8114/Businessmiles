@@ -10,6 +10,8 @@ const WebECommerceDevelopment = () => {
           padding: "60px 20px",
           textAlign: "center",
           color: "#4e4e4e",
+             backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'
         }}
       >
         <div className="container">

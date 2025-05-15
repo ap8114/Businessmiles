@@ -6,7 +6,8 @@ const DigitalTransformationConsulting = () => {
     <div style={{ backgroundColor: "#fffdf5", paddingTop: "60px", paddingBottom: "80px", fontFamily: "Segoe UI, sans-serif" }}>
       
       {/* Hero Section */}
-      <Container className="text-center mb-5">
+      <Container className="text-center mb-5 py-5" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'}}>
         <h1 style={{ fontWeight: 700, fontSize: "36px", color: "#1a1a1a" ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"}}>

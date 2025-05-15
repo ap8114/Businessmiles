@@ -11,6 +11,8 @@ const FeasibilityConsultingPageAlt = () => {
           padding: "60px 20px",
           textAlign: "center",
           color: "#1a1a1a",
+          backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'
         }}
       >
         <h1 style={{ fontSize: "36px", fontWeight: "700", marginBottom: "15px" ,  background: "linear-gradient(to right, #FFD700, #333333)",

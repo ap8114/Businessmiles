@@ -16,10 +16,12 @@ const EducationELearningPage = () => {
       <div style={{
         backgroundColor: '#f7a900',
         padding: '40px 20px',
-        color: '#fff',
+        color: 'black',
         textAlign: 'center',
         borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px'
+        borderBottomRightRadius: '40px',
+        backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'
       }}>
         <h2 style={{ fontWeight: '700', fontSize: '2.4rem' ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",

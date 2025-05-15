@@ -16,7 +16,8 @@ const ConstructionContractingPage = () => {
       <div style={{ height: '5px', backgroundColor: '#f7a900' }} />
 
       {/* Hero Section */}
-      <Container className="py-5">
+      <Container className="py-5  mb-5 mt-2" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'}}>
         <Row>
           <Col md={7}>
             <h2 style={{ color: '#333', fontWeight: '700', fontSize: '2.2rem',  background: "linear-gradient(to right, #FFD700, #333333)",

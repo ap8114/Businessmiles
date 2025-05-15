@@ -5,7 +5,8 @@ const HealthcarePage = () => {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#fff', color: '#333' }}>
       {/* Header Section */}
-      <div style={{ backgroundColor: '#fcb900', padding: '60px 20px', textAlign: 'center' }}>
+      <div style={{ backgroundColor: '#fcb900', padding: '60px 20px', textAlign: 'center',backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover' }}>
         <h1 style={{ color: '#000', fontWeight: 'bold',  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent" }}>Healthcare & Life Sciences</h1>

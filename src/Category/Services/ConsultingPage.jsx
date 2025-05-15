@@ -4,7 +4,8 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 const ConsultingPage = () => {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", backgroundColor: "#fefae0", color: "#333" }}>
-      <div style={{ backgroundColor: "#fff8dc", padding: "60px 20px", textAlign: "center" }}>
+      <div style={{ backgroundColor: "#fff8dc", padding: "60px 20px", textAlign: "center" ,   backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'}}>
         <h1 style={{ fontWeight: "bold", color: "#f7b500" ,   background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"}}>Technology & Business Consulting</h1>
@@ -15,9 +16,7 @@ const ConsultingPage = () => {
           We help you make smarter tech decisions with deep industry insight,
           technical expertise, and outcome-focused planning.
         </p>
-        <Button style={{ backgroundColor: "#f7b500", border: "none", padding: "10px 20px", marginTop: "15px", color: "#000" }}>
-          Contact Us
-        </Button>
+       
       </div>
 
       <Container style={{ padding: "50px 15px" }}>

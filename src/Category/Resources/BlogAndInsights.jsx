@@ -15,12 +15,14 @@ const BlogAndInsights = () => {
       {/* Header Section */}
       <div style={{
         backgroundColor: '#1a1a1a',
-        color: '#fff',
-        padding: '60px 20px'
+        color: 'black',
+        padding: '60px 20px',
+        backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover'
       }}>
         <Container>
-          <Row className="align-items-center">
-            <Col md={8}>
+          <Row className="align-items-center ">
+            <Col md={8} >
               <h2 style={{ color: '#f7a900', fontWeight: '700', fontSize: '2.5rem' ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"}}>
