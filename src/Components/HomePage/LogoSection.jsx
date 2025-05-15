@@ -32,7 +32,7 @@ const LogoSection = () => {
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                   }}>
-          Our Clients
+          Our Clients.
         </h2>
         {/* Scrolling Logo Container */}
         <div className="overflow-hidden relative">
