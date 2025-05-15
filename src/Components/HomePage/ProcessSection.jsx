@@ -168,38 +168,59 @@ const ProcessSection = () => {
         </h2>
 
         {/* Tabs for the steps */}
-        <div className="flex justify-center gap-16 mb-8">
-          <button
-            className={`text-xl font-semibold py-2 px-6 ${
-              activeTab === 1
-                ? "text-blue-700 border-b-2 border-blue-700"
-                : "text-gray-600"
-            }`}
-            onClick={() => setActiveTab(1)}
-          >
-            1. Consulting
-          </button>
-          <button
-            className={`text-xl font-semibold py-2 px-6 ${
-              activeTab === 2
-                ? "text-blue-700 border-b-2 border-blue-700"
-                : "text-gray-600"
-            }`}
-            onClick={() => setActiveTab(2)}
-          >
-            2. Implementation
-          </button>
-          <button
-            className={`text-xl font-semibold py-2 px-6 ${
-              activeTab === 3
-                ? "text-blue-700 border-b-2 border-blue-700"
-                : "text-gray-600"
-            }`}
-            onClick={() => setActiveTab(3)}
-          >
-            3. Support
-          </button>
-        </div>
+   <div className="flex justify-center gap-16 mb-8">
+  <button
+    style={
+      activeTab === 1
+        ? {
+            background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            borderBottom: "2px solid #FFD700",
+          }
+        : { color: "#666666" }
+    }
+    className="text-xl font-semibold py-2 px-6"
+    onClick={() => setActiveTab(1)}
+  >
+    1. Consulting
+  </button>
+
+  <button
+    style={
+      activeTab === 2
+        ? {
+            background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            borderBottom: "2px solid #FFD700",
+          }
+        : { color: "#666666" }
+    }
+    className="text-xl font-semibold py-2 px-6"
+    onClick={() => setActiveTab(2)}
+  >
+    2. Implementation
+  </button>
+
+  <button
+    style={
+      activeTab === 3
+        ? {
+            background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            borderBottom: "2px solid #FFD700",
+          }
+        : { color: "#666666" }
+    }
+    className="text-xl font-semibold py-2 px-6"
+    onClick={() => setActiveTab(3)}
+  >
+    3. Support
+  </button>
+</div>
+
 
         {/* Content under the active tab */}
         {activeTab === 1 && (
