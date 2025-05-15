@@ -13,7 +13,9 @@ const FeasibilityConsultingPageAlt = () => {
           color: "#1a1a1a",
         }}
       >
-        <h1 style={{ fontSize: "36px", fontWeight: "700", marginBottom: "15px" }}>
+        <h1 style={{ fontSize: "36px", fontWeight: "700", marginBottom: "15px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>
           💡 Product & Software Feasibility Consulting
         </h1>
         <p style={{ fontSize: "18px", maxWidth: "700px", margin: "0 auto" }}>

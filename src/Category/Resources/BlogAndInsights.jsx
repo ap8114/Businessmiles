@@ -21,7 +21,9 @@ const BlogAndInsights = () => {
         <Container>
           <Row className="align-items-center">
             <Col md={8}>
-              <h2 style={{ color: '#f7a900', fontWeight: '700', fontSize: '2.5rem' }}>
+              <h2 style={{ color: '#f7a900', fontWeight: '700', fontSize: '2.5rem' ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>
                 🧠 Blog & Insights
               </h2>
               <p style={{ fontSize: '1.15rem', marginTop: '15px' }}>

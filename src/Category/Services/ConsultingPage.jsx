@@ -5,7 +5,9 @@ const ConsultingPage = () => {
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", backgroundColor: "#fefae0", color: "#333" }}>
       <div style={{ backgroundColor: "#fff8dc", padding: "60px 20px", textAlign: "center" }}>
-        <h1 style={{ fontWeight: "bold", color: "#f7b500" }}>Technology & Business Consulting</h1>
+        <h1 style={{ fontWeight: "bold", color: "#f7b500" ,   background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>Technology & Business Consulting</h1>
         <h4 style={{ marginTop: "15px", color: "#7a5d1a" }}>
           Plan. Modernize. Transform.
         </h4>

@@ -19,7 +19,9 @@ const ConstructionContractingPage = () => {
       <Container className="py-5">
         <Row>
           <Col md={7}>
-            <h2 style={{ color: '#333', fontWeight: '700', fontSize: '2.2rem' }}>
+            <h2 style={{ color: '#333', fontWeight: '700', fontSize: '2.2rem',  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>
               🏗️ Construction & Contracting
             </h2>
             <p style={{ fontSize: '1.1rem', color: '#555' }}>

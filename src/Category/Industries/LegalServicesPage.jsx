@@ -22,7 +22,9 @@ const LegalServicesPage = () => {
         <Container>
           <Row>
             <Col md={8}>
-              <h2 style={{ color: '#f7a900', fontWeight: '700', fontSize: '2.5rem' }}>
+              <h2 style={{ color: '#f7a900', fontWeight: '700', fontSize: '2.5rem' ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>
                 🔹 Legal & Professional Services
               </h2>
               <p style={{ fontSize: '1.1rem', marginTop: '15px' }}>

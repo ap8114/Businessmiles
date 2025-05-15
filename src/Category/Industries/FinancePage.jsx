@@ -9,7 +9,9 @@ const FinancePage = () => {
         <Row>
           <Col md={6}>
             <div style={{ borderLeft: '5px solid #f7a900', paddingLeft: '20px', marginBottom: '30px' }}>
-              <h2 style={{ color: '#292929', fontWeight: '700', fontSize: '2.2rem' }}>
+              <h2 style={{ color: '#292929', fontWeight: '700', fontSize: '2.2rem',  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>
                 🔹 Finance & Insurance
               </h2>
               <p style={{ color: '#555', fontSize: '1.2rem' }}>

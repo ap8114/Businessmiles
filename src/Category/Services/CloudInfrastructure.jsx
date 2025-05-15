@@ -10,7 +10,9 @@ const CloudInfrastructure = () => {
       }}
     >
       <div className="container text-center">
-        <h2 style={{ fontWeight: "bold", color: "#6b4e00" }}>
+        <h2 style={{ fontWeight: "bold", color: "#6b4e00",   background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>
           Cloud Infrastructure & DevOps
         </h2>
         <p style={{ maxWidth: "800px", margin: "15px auto", fontSize: "1.1rem" }}>

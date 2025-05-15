@@ -19,7 +19,9 @@ const ITStrategySection = () => {
                 fontWeight: "bold",
                 fontSize: "32px",
                 color: "#f9c31f",
-              }}
+                background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}
             >
               📊 IT Strategy & Roadmapping
             </h2>

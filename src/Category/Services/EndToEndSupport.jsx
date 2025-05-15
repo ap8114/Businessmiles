@@ -9,8 +9,10 @@ const EndToEndSupport = () => {
     <div style={{ fontFamily: 'Arial, sans-serif', background: '#fff9f0', padding: '3rem 0' }}>
       <Container>
         {/* Section Title */}
-        <h2 style={{ color: '#2b2b2b', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>
-          🔁 End-to-End Support
+        <h2 style={{ color: '#2b2b2b', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center',background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>
+          <span style={{WebkitTextFillColor: "transparent" }} >🔁</span> End-to-End Support
         </h2>
 
         {/* Description */}

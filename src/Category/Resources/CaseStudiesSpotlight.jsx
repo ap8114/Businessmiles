@@ -24,7 +24,9 @@ const CaseStudiesSpotlight = () => {
     <div style={{ backgroundColor: "#fffef3", paddingTop: "60px", fontFamily: "Segoe UI, sans-serif" }}>
       {/* Hero */}
       <Container className="text-center mb-5">
-        <h1 style={{ fontWeight: "700", fontSize: "40px", color: "#1a1a1a" }}>📖 Case Studies</h1>
+        <h1 style={{ fontWeight: "700", fontSize: "40px", color: "#1a1a1a",  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>📖 Case Studies</h1>
         <p style={{ fontSize: "18px", color: "#4f4f4f", marginTop: "20px", maxWidth: "720px", margin: "auto" }}>
           Explore how we turned business challenges into digital success. From startups to enterprises —
           our solutions deliver measurable results.

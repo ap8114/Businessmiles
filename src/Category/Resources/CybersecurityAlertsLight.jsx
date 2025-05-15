@@ -22,7 +22,9 @@ const CybersecurityAlertsLight = () => {
       
       {/* Header */}
       <Container className="text-center mb-5">
-        <h1 style={{ fontWeight: 700, fontSize: "36px", color: "#1a1a1a" }}>
+        <h1 style={{ fontWeight: 700, fontSize: "36px", color: "#1a1a1a" ,  background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"}}>
           🛡 Cybersecurity Alerts
         </h1>
         <p style={{ fontSize: "17px", color: "#4f4f4f", marginTop: "15px", maxWidth: "720px", margin: "auto" }}>

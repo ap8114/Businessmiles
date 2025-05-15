@@ -13,7 +13,9 @@ const WebECommerceDevelopment = () => {
         }}
       >
         <div className="container">
-          <h2 style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#c59f00" }}>
+          <h2 style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#c59f00",   background: "linear-gradient(to right, #FFD700, #333333)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent" }}>
             🌐 Web & E-Commerce Development
           </h2>
           <p
