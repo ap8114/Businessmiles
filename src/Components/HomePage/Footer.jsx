@@ -36,16 +36,7 @@ const Footer = () => {
           >
             Let’s build something great together
           </h4>
-          <button
-            className="btn btn-warning fw-semibold px-4 py-2 mt-3"
-            style={{
-              background: "linear-gradient(to right, #FFD700, #FF8C00)",
-              border: "none",
-              color: "#333",
-            }}
-          >
-            Contact Us
-          </button>
+          
         </div>
 
         {/* Logo & Sections */}

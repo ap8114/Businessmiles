@@ -39,7 +39,7 @@ const Reviews = () => {
       <div className="d-flex justify-content-center align-items-center mb-2">
         <span className="fs-2 fw-semibold text-warning">4.8</span>
         <FaStar className="text-warning mx-1 fs-4" />
-        <span className="fs-6 text-primary">278 reviews</span>
+        <span  className="fs-6 " >278 reviews</span>
       </div>
       <div className="d-flex justify-content-center align-items-center mb-4">
         <div className="d-flex align-items-center">

@@ -1,20 +1,22 @@
 
+import { img } from "framer-motion/client";
 import React from "react";
+
 
 // Client logos array with company names
 const clientLogos = [
-  { logo: "/path/to/armand.png", name: "Armand" },
-  { logo: "/path/to/cornelis.png", name: "Cornelis Networks" },
-  { logo: "/path/to/emmloans.png", name: "Emmloans" },
-  { logo: "/path/to/empowor.png", name: "EmpowOR" },
-  { logo: "/path/to/bcg.png", name: "BCG" },
-  { logo: "/path/to/factor4.png", name: "Factor4" },
-  { logo: "/path/to/gsa.png", name: "GSA National" },
-  { logo: "/path/to/culturewise.png", name: "CultureWise" },
-  { logo: "/path/to/western_union.png", name: "Western Union" },
-  { logo: "/path/to/imedview.png", name: "Imedview" },
-  { logo: "/path/to/gsl.png", name: "GSL" },
-  { logo: "/path/to/gpsn.png", name: "GPSN" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "Armand", },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "Cornelis Networks" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "Emmloans" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "EmpowOR" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "BCG" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "Factor4" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "GSA National" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "CultureWise" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "Western Union" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "Imedview" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "GSL" },
+  { logo: "https://i.postimg.cc/3rbBwBbF/Google-Icons-09-512.webp", name: "GPSN" },
 ];
 
 const LogoSection = () => {
@@ -23,7 +25,7 @@ const LogoSection = () => {
   const secondSet = clientLogos.slice(6);
 
   return (
-    <div className="py-12 bg-gray-100"style={{ background: "linear-gradient(to right, #FFD700, #333333)"}}>
+    <div className="py-2 bg-gray-100"style={{ background: "linear-gradient(to right, #FFD700, #333333)"}}>
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold font-roboto text-black mb-8"  style={{
                     background: "linear-gradient(to right, #FFD700, #333333)",
