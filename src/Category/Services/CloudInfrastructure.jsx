@@ -9,11 +9,13 @@ const CloudInfrastructure = () => {
         padding: "60px 20px",
          borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px',
-        backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover'
+       
       }}
     >
       <div className="container text-center">
+        <div  className='py-5 ' style={{  backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize:'cover',        borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',}}>
         <h2 style={{ fontWeight: "bold", color: "#6b4e00",   background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent" }}>
@@ -23,6 +25,7 @@ const CloudInfrastructure = () => {
           <strong>Scale smarter. Operate faster. Deploy securely.</strong><br />
           We architect, deploy, and optimize cloud-native infrastructure using AWS, Azure, and Google Cloud — with a focus on performance, cost-efficiency, and DevOps automation.
         </p>
+        </div>
 
         <Card
           style={{
