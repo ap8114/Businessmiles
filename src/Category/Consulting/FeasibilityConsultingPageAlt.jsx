@@ -24,7 +24,7 @@ const FeasibilityConsultingPageAlt = () => {
         </h1>
         <p style={{ fontSize: "18px", maxWidth: "700px", margin: "0 auto" }}>
           Got an idea? Let’s validate it — fast and lean. We support entrepreneurs,
-          product owners, and innovation teams in shaping viable, scalable, user-focused
+          product owners, and innovation team in shaping viable, scalable, user-focused
           digital products.
         </p>
       </div>

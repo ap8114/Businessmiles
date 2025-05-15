@@ -13,7 +13,8 @@ const ITStrategySection = () => {
     >
       <Container>
         <Row className="justify-content-center text-center mb-5 py-3" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover',}}>
+        backgroundSize:'cover',        borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',}}>
           <Col lg={8}>
             <h2
               style={{
