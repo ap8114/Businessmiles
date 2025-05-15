@@ -5,7 +5,8 @@ const DigitalMarketing = () => {
   return (
     <div style={{ backgroundColor: '#fff', }}>
       {/* Header Section */}
-      <Container className="text-center py-5" style={{   backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+      <Container className="text-center py-5" style={{  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',  backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover'}}>
         <h2>
           <span style={{ color: '#c59f00', fontWeight: 'bold' }}>Digital Marketing</span> & Growth Strategy
@@ -43,23 +44,12 @@ const DigitalMarketing = () => {
       </Container>
 
       {/* CTA Section */}
-      <div style={{ backgroundColor: '#ffb400', padding: '40px 0' }}>
+      <div style={{ backgroundColor: '#ffb400', padding: '25px 0' }}>
         <Container className="text-center">
           <h4 style={{ color: '#fff', fontWeight: '600', marginBottom: '20px' }}>
             Every click. Every lead. Measured, optimized, maximized.
           </h4>
-          <Button
-            style={{
-              backgroundColor: '#fff',
-              color: '#ffb400',
-              border: '2px solid #fff',
-              fontWeight: 'bold',
-              padding: '10px 25px',
-              borderRadius: '50px'
-            }}
-          >
-            Contact Us
-          </Button>
+       
         </Container>
       </div>
     </div>

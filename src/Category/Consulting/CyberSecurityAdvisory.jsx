@@ -66,18 +66,7 @@ const CyberSecurityAdvisory = () => {
           <p style={{ marginTop: "10px", fontSize: "16px" }}>
             Our experts will tailor a cybersecurity plan that protects what matters most to your business.
           </p>
-          <Button style={{
-            backgroundColor: "#f9c31f",
-            color: "#000",
-            border: "none",
-            borderRadius: "25px",
-            padding: "10px 30px",
-            fontWeight: "600",
-            fontSize: "16px",
-            marginTop: "20px"
-          }}>
-            Contact Our Team
-          </Button>
+            
         </div>
       </Container>
     </div>

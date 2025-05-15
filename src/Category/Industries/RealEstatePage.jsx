@@ -13,7 +13,8 @@ const RealEstatePage = () => {
   return (
     <div style={{ backgroundColor: '#f5f0da', paddingTop: '60px', fontFamily: 'Segoe UI, sans-serif' }}>
       {/* Hero Section */}
-      <Container fluid style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+      <Container fluid style={{  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',   backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover'}} className='py-5'>
         <Row className="align-items-center">
           <Col md={1} style={{ borderLeft: '5px solid #f7a900', height: '100%' }}></Col>
@@ -81,7 +82,7 @@ const RealEstatePage = () => {
         backgroundColor: '#292929',
         color: '#fff',
         marginTop: '60px',
-        padding: '40px 20px',
+        padding: '30px 20px',
         textAlign: 'center'
       }}>
         <h4 style={{ fontWeight: '700', fontSize: '1.5rem' }}>

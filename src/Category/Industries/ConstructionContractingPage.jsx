@@ -16,7 +16,8 @@ const ConstructionContractingPage = () => {
       <div style={{ height: '5px', backgroundColor: '#f7a900' }} />
 
       {/* Hero Section */}
-      <Container className="py-5  mb-5 mt-2" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+      <Container className="py-5  mb-5 mt-2" style={{  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px', backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover'}}>
         <Row>
           <Col md={7}>

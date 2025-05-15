@@ -10,6 +10,8 @@ const WebECommerceDevelopment = () => {
           padding: "60px 20px",
           textAlign: "center",
           color: "#4e4e4e",
+           borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',
              backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover'
         }}
@@ -93,7 +95,7 @@ const WebECommerceDevelopment = () => {
           backgroundColor: "#ffb400",
           color: "#fff",
           textAlign: "center",
-          padding: "40px 20px",
+          padding: "25px 10px",
         }}
       >
         <h3 style={{ fontSize: "1.75rem", fontWeight: "bold" }}>

@@ -73,18 +73,7 @@ const CloudConsulting = () => {
               <p style={{ color: "#222", fontSize: "16px", marginBottom: "20px" }}>
                 Let’s align your infrastructure with your business goals.
               </p>
-              <Button
-                style={{
-                  backgroundColor: "#000",
-                  color: "#fff",
-                  border: "none",
-                  borderRadius: "30px",
-                  padding: "10px 30px",
-                  fontWeight: "bold",
-                }}
-              >
-                Contact Us
-              </Button>
+              
             </div>
           </Col>
         </Row>

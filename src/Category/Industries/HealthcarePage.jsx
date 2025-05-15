@@ -5,7 +5,8 @@ const HealthcarePage = () => {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#fff', color: '#333' }}>
       {/* Header Section */}
-      <div style={{ backgroundColor: '#fcb900', padding: '60px 20px', textAlign: 'center',backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+      <div style={{ backgroundColor: '#fcb900', padding: '60px 20px', textAlign: 'center', borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px',  backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover' }}>
         <h1 style={{ color: '#000', fontWeight: 'bold',  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
@@ -81,9 +82,8 @@ const HealthcarePage = () => {
           <h4 style={{ fontWeight: 'bold', marginBottom: '20px' }}>
             Your data stays safe. Your services stay accessible. Your patients stay satisfied.
           </h4>
-          <Button style={{ backgroundColor: '#fcb900', border: 'none', color: '#000', fontWeight: 'bold' }}>
-            Contact Us
-          </Button>
+          
+        
         </div>
       </Container>
     </div>
