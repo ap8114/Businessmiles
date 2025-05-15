@@ -61,36 +61,36 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className="col-lg-2 col-md-4 mb-4 " >
+          <div className="col-lg-2 col-md-4 mb-4   " >
             <h6 className="fw-bold">Services</h6>
             <ul className="list-unstyled small">
-              <li className='list-unstyled'>
-                <Link to="/customsoftwaredevelopment">
+              <li className='list-unstyled '>
+                <Link className="text-black text-decoration-none" to="/customsoftwaredevelopment">
                   Custom Software Development
                 </Link>
               </li>
               <li>
-                <Link to="/CloudInfrastructure">
+                <Link  className="text-black text-decoration-none" to="/CloudInfrastructure">
                   Cloud Infrastructure & DevOps
                 </Link>
               </li>
               <li>
-                <Link to="/WebECommerceDevelopment">
+                <Link className="text-black text-decoration-none"  to="/WebECommerceDevelopment">
                   Web & E-Commerce Development
                 </Link>
               </li>
               <li>
-                <Link to="/DigitalMarketing">
+                <Link className="text-black text-decoration-none" to="/DigitalMarketing">
                   Digital Marketing & Growth Strategy
                 </Link>
               </li>
               <li>
-                <Link to="/ConsultingPage">
+                <Link className="text-black text-decoration-none" to="/ConsultingPage">
                   Technology & Business Consulting
                 </Link>
               </li>
               <li>
-                <Link to="/EndToEndSupport">End-to-End Support</Link>
+                <Link className="text-black text-decoration-none" to="/EndToEndSupport">End-to-End Support</Link>
               </li>
             </ul>
           </div>
@@ -100,25 +100,25 @@ const Footer = () => {
             <h6 className="fw-bold">Consulting</h6>
             <ul className="list-unstyled small">
               <li>
-                <Link to="/ITStrategySection">IT Strategy & Roadmapping</Link>
+                <Link className="text-black text-decoration-none" to="/ITStrategySection">IT Strategy & Roadmapping</Link>
               </li>
               <li>
-                <Link to="/CloudConsulting">
+                <Link  className="text-black text-decoration-none" to="/CloudConsulting">
                   Cloud & Infrastructure Consulting
                 </Link>
               </li>
               <li>
-                <Link to="/CyberSecurityAdvisory">
+                <Link className="text-black text-decoration-none" to="/CyberSecurityAdvisory">
                   Cybersecurity & Compliance Advisory
                 </Link>
               </li>
               <li>
-                <Link to="/DigitalTransformationConsulting">
+                <Link className="text-black text-decoration-none" to="/DigitalTransformationConsulting">
                   Digital Transformation Consulting
                 </Link>
               </li>
               <li>
-                <Link to="/FeasibilityConsultingPageAlt">
+                <Link className="text-black text-decoration-none" to="/FeasibilityConsultingPageAlt">
                   FeasibilityConsultingPageAlt
                 </Link>
               </li>
@@ -132,35 +132,35 @@ const Footer = () => {
               <div className="col-6">
                 <ul className="list-unstyled small ">
                   <li>
-                    <Link to="/HealthcarePage">Healthcare & Life Sciences</Link>
+                    <Link className="text-black text-decoration-none" to="/HealthcarePage">Healthcare & Life Sciences</Link>
                   </li>
                   <li>
-                    <Link to="/LogisticsPage">Logistics & Supply Chain</Link>
+                    <Link className="text-black text-decoration-none"to="/LogisticsPage">Logistics & Supply Chain</Link>
                   </li>
                   <li>
-                    <Link to="/FinancePage">Finance & Insurance</Link>
+                    <Link className="text-black text-decoration-none" to="/FinancePage">Finance & Insurance</Link>
                   </li>
                   <li>
-                    <Link to="/RealEstatePage">
+                    <Link className="text-black text-decoration-none" to="/RealEstatePage">
                       Real Estate & Property Tech
                     </Link>
                   </li>
                   <li>
-                    <Link to="/RetailEcommercePage">Retail & E-Commerce</Link>
+                    <Link className="text-black text-decoration-none" to="/RetailEcommercePage">Retail & E-Commerce</Link>
                   </li>
                   <li>
-                    <Link to="/ConstructionContractingPage">
+                    <Link className="text-black text-decoration-none" to="/ConstructionContractingPage">
                       Construction & Contracting
                     </Link>
                   </li>
                   <li>
-                    <Link to="/EducationELearningPage">
+                    <Link className="text-black text-decoration-none" to="/EducationELearningPage">
                       Education & E-Learning
                     </Link>
                   </li>
                   <li>
-                    <Link to="/LegalServicesPage">
-                      Legal & Professional Services
+                    <Link className="text-black text-decoration-none" to="/LegalServicesPage">
+                      Legal & Professional Services.
                     </Link>
                   </li>
                 </ul>
@@ -170,20 +170,20 @@ const Footer = () => {
                 <h6 className="fw-bold ">Resources</h6>
                 <ul className="list-unstyled small">
                   <li>
-                    <Link to="/CaseStudiesSpotlight">Case Studies</Link>
+                    <Link className="text-black text-decoration-none" to="/CaseStudiesSpotlight">Case Studies</Link>
                   </li>
                   <li>
-                    <Link to="/CybersecurityAlertsLight">
+                    <Link className="text-black text-decoration-none"  to="/CybersecurityAlertsLight">
                       Cybersecurity Alerts
                     </Link>
                   </li>
                   <li>
-                    <Link to="/IndustryReportsAndGuides">
+                    <Link className="text-black text-decoration-none"  to="/IndustryReportsAndGuides">
                       Industry Reports & Trend Guides
                     </Link>
                   </li>
                   <li>
-                    <Link to="/BlogAndInsights">Blog & Insights</Link>
+                    <Link className="text-black text-decoration-none" to="/BlogAndInsights">Blog & Insights</Link>
                   </li>
                 </ul>
               </div>
