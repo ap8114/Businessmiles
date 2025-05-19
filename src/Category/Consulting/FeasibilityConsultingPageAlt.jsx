@@ -15,7 +15,7 @@ const FeasibilityConsultingPageAlt = () => {
         backgroundSize:'cover',
                 borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px',
-        }}
+        }} className="mt-5"
       >
         <h1 style={{ fontSize: "36px", fontWeight: "700", marginBottom: "15px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
