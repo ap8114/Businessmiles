@@ -1,11 +1,16 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function CustomSoftwareDevelopment() {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px'}}>
+    <div style={{
+      fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px", borderBottomLeftRadius: '40px',
+      borderBottomRightRadius: '40px'
+    }}>
       {/* Header */}
       <div
         style={{
@@ -76,6 +81,8 @@ export default function CustomSoftwareDevelopment() {
                     color: "#333",
                     textAlign: "center",
                     padding: "30px",
+                    border: "2px solid #ffaf4f",
+                    borderRadius: "12px",
                   }}
                 >
                   {item}
@@ -131,14 +138,32 @@ export default function CustomSoftwareDevelopment() {
                       fontSize: "1rem",
                       color: "#4a4a4a",
                       lineHeight: "1.8",
+                      listStyle: "none",
+                      paddingLeft: 0,
                     }}
                   >
-                    <li>✅ 24/7 Remote IT Support</li>
-                    <li>✅ Network Setup & Maintenance</li>
-                    <li>✅ Cloud Backup & Disaster Recovery</li>
-                    <li>✅ Firewall & Endpoint Security</li>
-                    <li>✅ Threat Detection & Compliance (ISO, HIPAA, GDPR)</li>
+                    <li>
+                      <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#ff8c00", marginRight: "8px" }} />
+                      24/7 Remote IT Support
+                    </li>
+                    <li>
+                      <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#ff8c00", marginRight: "8px" }} />
+                      Network Setup & Maintenance
+                    </li>
+                    <li>
+                      <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#ff8c00", marginRight: "8px" }} />
+                      Cloud Backup & Disaster Recovery
+                    </li>
+                    <li>
+                      <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#ff8c00", marginRight: "8px" }} />
+                      Firewall & Endpoint Security
+                    </li>
+                    <li>
+                      <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#ff8c00", marginRight: "8px" }} />
+                      Threat Detection & Compliance (ISO, HIPAA, GDPR)
+                    </li>
                   </ul>
+
                   <div
                     style={{
                       marginTop: "30px",
