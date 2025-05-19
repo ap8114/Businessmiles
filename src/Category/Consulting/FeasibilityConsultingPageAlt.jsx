@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const FeasibilityConsultingPageAlt = () => {
   return (
-    <div style={{ backgroundColor: "#ffffff", fontFamily: "Arial, sans-serif" ,}}>
+    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       {/* Top Bannerjkljlkhjklhjkhjhkjkjkjjklhjklhkjl */}
       <div
         style={{
@@ -15,7 +16,7 @@ const FeasibilityConsultingPageAlt = () => {
         backgroundSize:'cover',
                 borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px',
-        }} className="mt-5"
+        }} className="container"
       >
         <h1 style={{ fontSize: "36px", fontWeight: "700", marginBottom: "15px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",

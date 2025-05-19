@@ -3,23 +3,24 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 
 const CyberSecurityAdvisory = () => {
   return (
-    <div style={{ backgroundColor: "#fdf9f0", padding: "60px 0", fontFamily: "'Segoe UI', sans-serif" }}>
+    <div style={{ backgroundColor: "#f6f1e7", padding: "60px 0", fontFamily: "'Segoe UI', sans-serif" }}>
       {/* Top Banner Section */}
       <div style={{
         background: "linear-gradient(135deg, #f9c31f 0%, #ffe382 100%)",
-        padding: "50px 30px",
-       
-        margin: "0 5%",
+        padding: "60px 20px",
         textAlign: "center",
         boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-        backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover',
-                borderBottomLeftRadius: '40px',
+        backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize: 'cover',
+        borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px',
-      }}>
-        <h1 style={{ color: "#000", fontWeight: "bold", fontSize: "32px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent"}}>🔐 Cybersecurity & Compliance</h1>
+      }}
+      className="container">
+        <h1 style={{
+          color: "#000", fontWeight: "bold", fontSize: "32px", background: "linear-gradient(to right, #FFD700, #333333)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent"
+        }}>🔐 Cybersecurity & Compliance</h1>
         <p style={{ color: "#222", fontSize: "18px", marginTop: "15px", maxWidth: "800px", margin: "auto" }}>
           Security is not an add-on — it’s the foundation. We help you stay secure, compliant, and ahead of risks with trusted frameworks like ISO 27001, GDPR, HIPAA, and NIST.
         </p>
@@ -68,7 +69,7 @@ const CyberSecurityAdvisory = () => {
           <p style={{ marginTop: "10px", fontSize: "16px" }}>
             Our experts will tailor a cybersecurity plan that protects what matters most to your business.
           </p>
-            
+
         </div>
       </Container>
     </div>

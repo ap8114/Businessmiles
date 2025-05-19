@@ -3,16 +3,19 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 const ConsultingPage = () => {
   return (
-    <div style={{ backgroundColor: "#fff" }}>
+    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       {/* Header Section */}
       <Container
-        className="text-center py-5 mt-5"
+        className="container text-center"
         style={{
+          padding: '60px',
           borderBottomLeftRadius: "40px",
           borderBottomRightRadius: "40px",
           backgroundImage:
             "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
           backgroundSize: "cover",
+          backgroundColor: "#f6f1e7"
         }}
       >
         <h2>

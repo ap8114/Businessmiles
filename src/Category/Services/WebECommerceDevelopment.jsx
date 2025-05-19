@@ -3,64 +3,64 @@ import { Card, CardBody } from "react-bootstrap";
 
 const WebECommerceDevelopment = () => {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#fff" }}>
-   <section
-  style={{
-    margin: "40px 20px 0", // top and side margin like the image
-    borderBottomLeftRadius: "40px",
-    borderBottomRightRadius: "40px",
-    padding: "60px 20px",
-    textAlign: "center",
-    color: "#4e4e4e",
-    backgroundImage:
-      "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-    backgroundSize: "cover",
-   
-    
-    backgroundColor: "#fff8e6",
-  }}
->
-  <div className="container">
-    <h2
-      style={{
-        fontSize: "2.5rem",
-        fontWeight: "bold",
-        color: "#c59f00",
-        background: "linear-gradient(to right, #FFD700, #333333)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      }}
-    >
-      🌐 Web & E-Commerce Development
-    </h2>
-    <p
-      style={{
-        fontSize: "1.25rem",
-        marginTop: "20px",
-        maxWidth: "800px",
-        margin: "0 auto",
-      }}
-    >
-      Build a web presence that performs.
-    </p>
-    <p
-      style={{
-        fontSize: "1rem",
-        marginTop: "10px",
-        maxWidth: "800px",
-        margin: "0 auto",
-      }}
-    >
-      We design fast, user-friendly, SEO-optimized websites and e-commerce
-      platforms that drive conversions and elevate your brand.
-    </p>
-  </div>
-</section>
+    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
+      <section
+        style={{
+          marginTop: '10px',
+          // top and side margin like the image
+          borderBottomLeftRadius: "40px",
+          borderBottomRightRadius: "40px",
+          padding: "60px 20px",
+          textAlign: "center",
+          color: "#4e4e4e",
+          backgroundImage:
+            "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+          backgroundSize: "cover",
+          backgroundColor: "#fff8e6",
+        }} 
+      >
+        <div className="container my-3">
+          <h2
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+              color: "#c59f00",
+              background: "linear-gradient(to right, #FFD700, #333333)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            🌐 Web & E-Commerce Development
+          </h2>
+          <p
+            style={{
+              fontSize: "1.25rem",
+              marginTop: "20px",
+              maxWidth: "800px",
+              margin: "0 auto",
+            }}
+          >
+            Build a web presence that performs.
+          </p>
+          <p
+            style={{
+              fontSize: "1rem",
+              marginTop: "10px",
+              maxWidth: "800px",
+              margin: "0 auto",
+            }}
+          >
+            We design fast, user-friendly, SEO-optimized websites and e-commerce
+            platforms that drive conversions and elevate your brand.
+          </p>
+        </div>
+      </section>
 
 
       <section
         style={{
-          backgroundColor: "#fff",
+          backgroundColor: "#f6f1e7",
           padding: "40px 20px",
           textAlign: "center",
         }}

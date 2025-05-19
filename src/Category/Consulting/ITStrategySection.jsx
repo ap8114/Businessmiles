@@ -5,7 +5,7 @@ const ITStrategySection = () => {
   return (
     <div
       style={{
-        backgroundColor: "#fff",
+        backgroundColor: "#f6f1e7",
         padding: "60px 0",
         color: "#333",
         fontFamily: "Segoe UI, sans-serif",

@@ -11,7 +11,8 @@ const features = [
 
 const EducationELearningPage = () => {
   return (
-    <div style={{ backgroundColor: '#fffdf6', fontFamily: 'Segoe UI, sans-serif' }}>
+       <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       {/* Top Banner */}
       <div style={{
         backgroundColor: '#f7a900',
@@ -22,7 +23,8 @@ const EducationELearningPage = () => {
         borderBottomRightRadius: '40px',
         backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover'
-      }}>
+      }}
+      className='container'>
         <h2 style={{ fontWeight: '700', fontSize: '2.4rem' ,  background: "linear-gradient(to right, #FFD700, #333333)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"}}>🎓 Education & E-Learning</h2>

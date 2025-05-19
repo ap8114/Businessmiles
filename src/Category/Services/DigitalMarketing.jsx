@@ -3,11 +3,13 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const DigitalMarketing = () => {
   return (
-    <div style={{ backgroundColor: '#fff' }}>
+    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       {/* Header Section */}
       <section
         style={{
-          margin: "40px 20px 0",
+          margin: '40px 20px 0' ,
+          marginTop: '10px' ,
           borderBottomLeftRadius: "40px",
           borderBottomRightRadius: "40px",
           padding: "60px 20px",

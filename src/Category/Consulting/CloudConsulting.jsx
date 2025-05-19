@@ -3,16 +3,21 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const CloudConsulting = () => {
   return (
-    <div style={{ backgroundColor: "#fff", padding: "60px 0", fontFamily: "Segoe UI, sans-serif" }}>
+    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       <Container>
         {/* Header */}
-        <Row className="text-center mb-4 py-5" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover',        borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px',}}>
+        <Row className="text-center mb-4 py-5" style={{
+          backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+          backgroundSize: 'cover', borderBottomLeftRadius: '40px',
+          borderBottomRightRadius: '40px',
+        }}>
           <Col>
-            <h2 style={{ color: "#f9c31f", fontWeight: "bold", fontSize: "32px" ,  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent"}}>
+            <h2 style={{
+              color: "#f9c31f", fontWeight: "bold", fontSize: "32px", background: "linear-gradient(to right, #FFD700, #333333)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
+            }}>
               ☁ Cloud & Infrastructure Consulting
             </h2>
             <p style={{ fontSize: "18px", color: "#333", marginTop: "10px" }}>
@@ -74,7 +79,7 @@ const CloudConsulting = () => {
               <p style={{ color: "#222", fontSize: "16px", marginBottom: "20px" }}>
                 Let’s align your infrastructure with your business goals.
               </p>
-              
+
             </div>
           </Col>
         </Row>

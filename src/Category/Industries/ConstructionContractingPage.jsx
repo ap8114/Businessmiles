@@ -11,19 +11,24 @@ const features = [
 
 const ConstructionContractingPage = () => {
   return (
-    <div style={{ backgroundColor: '#fff8ec', fontFamily: 'Segoe UI, sans-serif' }}>
-      {/* Golden Accent Bar */}
-      <div style={{ height: '5px', backgroundColor: '#f7a900' }} />
+    <div style={{
+      fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px", borderBottomLeftRadius: '40px',
+      borderBottomRightRadius: '40px'
+    }}>
 
       {/* Hero Section */}
-      <Container className="py-5  mb-5 mt-2" style={{  borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px', backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover'}}>
+      <Container className="py-5  mb-5 mt-2" style={{
+        borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px', backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize: 'cover'
+      }}>
         <Row>
           <Col md={7}>
-            <h2 style={{ color: '#333', fontWeight: '700', fontSize: '2.2rem',  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent" }}>
+            <h2 style={{
+              color: '#333', fontWeight: '700', fontSize: '2.2rem', background: "linear-gradient(to right, #FFD700, #333333)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
+            }}>
               🏗️ Construction & Contracting
             </h2>
             <p style={{ fontSize: '1.1rem', color: '#555' }}>

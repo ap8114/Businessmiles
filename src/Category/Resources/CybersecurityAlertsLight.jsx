@@ -18,7 +18,7 @@ const CybersecurityAlertsLight = () => {
   ];
 
   return (
-    <div style={{ backgroundColor: "#fffdf5", fontFamily: "Segoe UI, sans-serif", paddingTop: "60px", paddingBottom: "60px" }}>
+    <div style={{ backgroundColor: "#f6f1e7", fontFamily: "Segoe UI, sans-serif", paddingTop: "60px", paddingBottom: "60px" }}>
       
       {/* Header */}
       <Container className="text-center mb-5 py-5" style={{    borderBottomLeftRadius: '40px',

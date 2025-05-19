@@ -4,19 +4,20 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 export default function CustomSoftwareDevelopment() {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#fff" }}>
+    <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       {/* Header */}
       <div
         style={{
           backgroundColor: "#fff8e5",
-          padding: "60px 20px",
+          padding: "60px",
           textAlign: "center",
           borderBottomLeftRadius: "40px",
           borderBottomRightRadius: "40px",
           backgroundImage:
             "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
           backgroundSize: "cover",
-        }} className="mt-5"
+        }} className="container"
       >
         <h1
           style={{

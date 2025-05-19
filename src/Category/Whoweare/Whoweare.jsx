@@ -3,13 +3,10 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 export default function WhoWeAre() {
   return (
-  <div style={{
-  margin: '40px 20px', // top and side margin
-  borderRadius: '40px',
-  overflow: 'hidden',
-}}>
+ <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
   <Container
-    className="py-5 text-center"
+    className="container text-center"
     style={{
       backgroundImage: 'url("https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg")',
       backgroundSize: 'cover',
@@ -18,6 +15,7 @@ export default function WhoWeAre() {
       borderBottomLeftRadius: '40px',
       borderBottomRightRadius: '40px',
       padding: '60px 20px',
+      backgroundColor: '#f6f1e7',
     }}
   >
     <h2
@@ -39,7 +37,7 @@ export default function WhoWeAre() {
   </Container>
 
       {/* Our Promise */}
-      <Container className="text-center py-4" style={{ backgroundColor: '#fffbe0' }}>
+      <Container className="text-center py-4" style={{ backgroundColor: '#f6f1e7', }}>
         <h3 className="mb-4">Our Promise</h3>
         <Row>
           {[

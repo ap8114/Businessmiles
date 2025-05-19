@@ -21,7 +21,7 @@ const CaseStudiesSpotlight = () => {
   ];
 
   return (
-    <div style={{ backgroundColor: "#fffef3", paddingTop: "60px", fontFamily: "Segoe UI, sans-serif" }}>
+    <div style={{ backgroundColor: "#f6f1e7", paddingTop: "60px", fontFamily: "Segoe UI, sans-serif" }}>
       {/* Hero */}
       <Container className="text-center mb-5 py-5" style={{    borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px',    backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",

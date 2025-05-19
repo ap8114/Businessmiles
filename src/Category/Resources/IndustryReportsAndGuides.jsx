@@ -3,8 +3,10 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 const IndustryReportsAndGuides = () => {
   return (
-    <div style={{ backgroundColor: "#fcfcfc", padding: "70px 20px", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover' }}>
+    <div style={{
+      backgroundColor: "#f6f1e7", padding: "70px 20px", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+      backgroundSize: 'cover'
+    }}>
       <Container style={{ maxWidth: "900px", backgroundColor: "#ffffff", borderRadius: "20px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)", overflow: "hidden" }}>
         <Row>
           {/* Left Vertical Colored Bar with Icons */}
@@ -27,9 +29,11 @@ const IndustryReportsAndGuides = () => {
           {/* Right Content Section */}
           <Col md={9} style={{ padding: "50px 40px", color: "#333" }}>
             <section style={{ marginBottom: "60px" }}>
-              <h2 style={{ fontWeight: "800", fontSize: "28px", marginBottom: "15px", color: "#1a1a1a" ,  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent"}}>📊 Industry Reports & Trend Guides</h2>
+              <h2 style={{
+                fontWeight: "800", fontSize: "28px", marginBottom: "15px", color: "#1a1a1a", background: "linear-gradient(to right, #FFD700, #333333)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent"
+              }}>📊 Industry Reports & Trend Guides</h2>
               <p style={{ fontSize: "17px", lineHeight: "1.6" }}>
                 Stay informed. Stay competitive. From cloud adoption and AI tools to digital transformation trends and compliance changes —
                 our research-backed reports keep you ahead of the curve.
