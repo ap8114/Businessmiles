@@ -3,8 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const FeasibilityConsultingPageAlt = () => {
   return (
-    <div style={{ backgroundColor: "#ffffff", fontFamily: "Arial, sans-serif" }}>
-      {/* Top Banner */}
+    <div style={{ backgroundColor: "#ffffff", fontFamily: "Arial, sans-serif" ,}}>
+      {/* Top Bannerjkljlkhjklhjkhjhkjkjkjjklhjklhkjl */}
       <div
         style={{
           backgroundColor: "#f9c31f",
