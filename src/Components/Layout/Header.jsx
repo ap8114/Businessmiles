@@ -147,7 +147,7 @@ const Header = () => {
                       {navItem.isDropdown ? (
                         <div className="dropdown">
                           <a
-                            className="nav-link dropdown-toggle text-dark fw-normal"
+                            className="nav-link text-dark fw-normal"
                             href="#"
                             id={`${navItem.id}Dropdown`}
                             role="button"
