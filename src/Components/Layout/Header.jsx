@@ -194,9 +194,6 @@ const Header = () => {
                     Contact Us
                   </Button>
                 </Link>
-                <Button variant="light" className="border p-1 d-none d-sm-block">
-                  <FaSearch />
-                </Button>
 
                 {/* Hamburger for mobile */}
                 <Button
@@ -307,9 +304,6 @@ const Header = () => {
                   Contact Us
                 </Button>
               </Link>
-              <Button variant="light" className="w-100 border">
-                <FaSearch className="me-2" /> Search
-              </Button>
             </div>
           </Modal.Body>
         </Modal>

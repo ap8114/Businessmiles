@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 const DigitalTransformationConsulting = () => {
@@ -67,6 +68,7 @@ const DigitalTransformationConsulting = () => {
           <p style={{ color: "#4f4f4f", fontSize: "16px", marginBottom: "30px" }}>
             Talk to our consulting team and explore how we can reshape your digital future with confidence and clarity.
           </p>
+          <Link to="/contactus">
           <Button
             style={{
               backgroundColor: "#1a1a1a",
@@ -79,6 +81,7 @@ const DigitalTransformationConsulting = () => {
           >
             Talk to Us
           </Button>
+          </Link>
         </div>
       </Container>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const features = [
@@ -92,6 +93,7 @@ const RealEstatePage = () => {
         <h4 style={{ fontWeight: '700', fontSize: '1.5rem' }}>
           From residential to commercial, we digitize every square foot.
         </h4>
+        <Link to="/contactus">
         <Button
           style={{
             backgroundColor: '#f7a900',
@@ -104,6 +106,7 @@ const RealEstatePage = () => {
         >
           Get in Touch
         </Button>
+        </Link>
       </div>
     </div>
   );

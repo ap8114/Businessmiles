@@ -12,15 +12,15 @@ const IndustryReportsAndGuides = () => {
           {/* Left Vertical Colored Bar with Icons */}
           <Col md={3} style={{ backgroundColor: "#f9c31f", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 10px" }}>
             <div style={{ marginBottom: "40px", textAlign: "center", color: "#222" }}>
-              <div style={{ backgroundColor: "#fff", borderRadius: "50%", padding: "15px", marginBottom: "15px", display: "inline-block" }}>
-                <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-report-business-and-finance-flaticons-lineal-color-flat-icons.png" alt="Reports" style={{ width: "40px", height: "40px" }} />
+              <div style={{ backgroundColor: "#fff",width: "55px", borderRadius: "50%", padding: "15px", marginBottom: "15px", display: "inline-block" }}>
+                <i class="fa-solid fa-chart-gantt" style={{width: "30px"}} ></i>
               </div>
               <h5 style={{ fontWeight: "700", fontSize: "16px", color: "#222" }}>Industry Reports</h5>
             </div>
 
             <div style={{ textAlign: "center", color: "#222" }}>
-              <div style={{ backgroundColor: "#fff", borderRadius: "50%", padding: "15px", marginBottom: "15px", display: "inline-block" }}>
-                <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-guide-business-flaticons-lineal-color-flat-icons.png" alt="Guides" style={{ width: "40px", height: "40px" }} />
+              <div style={{ backgroundColor: "#fff", borderRadius: "50%", padding: "15px", width: "55px",marginBottom: "15px", display: "inline-block" }}>
+                <i class="fa-solid fa-book-open-reader"></i>
               </div>
               <h5 style={{ fontWeight: "700", fontSize: "16px", color: "#222" }}>How-To Guides</h5>
             </div>

@@ -136,6 +136,7 @@ const Footer = () => {
         {/* Contact & Social */}
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center py-4 border-top mt-4">
           <div className="mb-3 mb-md-0">
+            <Link to="/contactus">
             <button
               className="btn btn-outline-secondary fw-bold"
               style={{
@@ -146,6 +147,7 @@ const Footer = () => {
             >
               CONTACT US
             </button>
+            </Link>
             <div className="small mt-2">
               866-955-1787 | <a href="#" className="text-dark text-decoration-none">Login</a>
             </div>

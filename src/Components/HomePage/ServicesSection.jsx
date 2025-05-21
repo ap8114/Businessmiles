@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaShieldAlt,
   FaCartPlus,
@@ -139,15 +140,15 @@ const ServicesSection = () => {
 
       {/* CTA Button */}
       <div className="text-center mt-5">
-        <a
-          href="#"
+        <Link to="/contactus"
+
           className="btn btn-warning btn-lg text-dark fw-bold shadow-sm"
           style={getButtonStyle(5)}
           onMouseEnter={() => setHovered(5)}
           onMouseLeave={() => setHovered(null)}
         >
           CONTACT US
-        </a>
+        </Link>
       </div>
 
       {/* CTA Button */}

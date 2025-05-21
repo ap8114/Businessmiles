@@ -154,155 +154,88 @@ const ProcessSection = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <div className=" py-16" style={{ backgroundColor: "#E2D9A6" }}>
-      <div className="max-w-7xl mx-auto px-6">
-        <h2
-          className="text-4xl font-extrabold font-roboto text-center mb-8"
-          style={{
-            background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
+    <div className="py-16" style={{ backgroundColor: "#E2D9A6" }}>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2
+      className="text-3xl sm:text-4xl font-extrabold font-roboto text-center mb-10"
+      style={{
+        background: "linear-gradient(to right, #FFD700, #333333)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}
+    >
+      We make technology simple.
+    </h2>
+
+    {/* Tabs for the steps */}
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 mb-10">
+      {[1, 2, 3].map((tab) => (
+        <button
+          key={tab}
+          style={
+            activeTab === tab
+              ? {
+                  background: "linear-gradient(to right, #FFD700, #333333)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  borderBottom: "2px solid #FFD700",
+                }
+              : { color: "#666666" }
+          }
+          className="text-lg sm:text-xl font-semibold py-2 px-4 sm:px-6 text-center"
+          onClick={() => setActiveTab(tab)}
         >
-          We make technology simple.
-        </h2>
+          {tab === 1 && "1. Consulting"}
+          {tab === 2 && "2. Implementation"}
+          {tab === 3 && "3. Support"}
+        </button>
+      ))}
+    </div>
 
-        {/* Tabs for the steps */}
-   <div className="flex justify-center gap-16 mb-8">
-  <button
-    style={
-      activeTab === 1
-        ? {
-            background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            borderBottom: "2px solid #FFD700",
-          }
-        : { color: "#666666" }
-    }
-    className="text-xl font-semibold py-2 px-6"
-    onClick={() => setActiveTab(1)}
-  >
-    1. Consulting
-  </button>
+    {/* Content under the active tab */}
+    <div className="text-center animate__animated animate__fadeInUp animate__delay-0.5s">
+      {activeTab === 1 && (
+        <>
+          <FaShieldAlt className="mx-auto text-warning mb-6" size={50} />
+          <h3 className="text-xl sm:text-2xl font-bold font-roboto mb-4">Consulting</h3>
+          <p className="text-base sm:text-lg text-black mb-6 max-w-3xl mx-auto px-4">
+            It all starts with an in-depth and friendly introduction, where we prioritize truly understanding your business...
+          </p>
+          <p className="text-base sm:text-lg text-black mb-8 max-w-3xl mx-auto px-4">
+            As part of this initial phase, we conduct a thorough analysis of your current systems and practices...
+          </p>
+        </>
+      )}
 
-  <button
-    style={
-      activeTab === 2
-        ? {
-            background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            borderBottom: "2px solid #FFD700",
-          }
-        : { color: "#666666" }
-    }
-    className="text-xl font-semibold py-2 px-6"
-    onClick={() => setActiveTab(2)}
-  >
-    2. Implementation
-  </button>
+      {activeTab === 2 && (
+        <>
+          <FaCogs className="mx-auto text-warning mb-6" size={50} />
+          <h3 className="text-xl sm:text-2xl font-bold font-roboto mb-4">Implementation</h3>
+          <p className="text-base sm:text-lg text-black mb-6 max-w-3xl mx-auto px-4">
+            After gaining a clear understanding of your needs and business objectives, we move into the implementation phase...
+          </p>
+          <p className="text-base sm:text-lg text-black mb-8 max-w-3xl mx-auto px-4">
+            Our team takes a methodical approach to implementation, starting with setting up the necessary infrastructure...
+          </p>
+        </>
+      )}
 
-  <button
-    style={
-      activeTab === 3
-        ? {
-            background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            borderBottom: "2px solid #FFD700",
-          }
-        : { color: "#666666" }
-    }
-    className="text-xl font-semibold py-2 px-6"
-    onClick={() => setActiveTab(3)}
-  >
-    3. Support
-  </button>
+      {activeTab === 3 && (
+        <>
+          <FaHandsHelping className="mx-auto text-warning mb-6" size={50} />
+          <h3 className="text-xl sm:text-2xl font-bold font-roboto mb-4">Support</h3>
+          <p className="text-base sm:text-lg text-black mb-6 max-w-3xl mx-auto px-4">
+            Our commitment to you doesn’t stop after implementation. We offer continuous, proactive support...
+          </p>
+          <p className="text-base sm:text-lg text-black mb-8 max-w-3xl mx-auto px-4">
+            In addition to proactive monitoring, we regularly update your systems to ensure they are running the latest...
+          </p>
+        </>
+      )}
+    </div>
+  </div>
 </div>
 
-
-        {/* Content under the active tab */}
-        {activeTab === 1 && (
-          <div className="text-center animate__animated animate__fadeInUp animate__delay-0.5s">
-            <FaShieldAlt className="mx-auto text-warning  mb-6" size={50} />
-            <h3 className="text-2xl font-bold  font-roboto mb-4">Consulting</h3>
-            <p className="text-lg text-black mb-8">
-              It all starts with an in-depth and friendly introduction, where we
-              prioritize truly understanding your business. Our team takes the
-              time to listen to your goals, challenges, and vision for the
-              future. We engage with you through collaborative discussions,
-              learning about your existing processes, workflows, and any pain
-              points you're experiencing. Our goal is to build a strong
-              foundation of trust and transparency, so we can work together
-              toward a common objective.
-            </p>
-            <p className="text-lg text-black  mb-8">
-              As part of this initial phase, we conduct a thorough analysis of
-              your current systems and practices. This includes understanding
-              your technology stack, your team dynamics, and how your business
-              interacts with customers, partners, and internal processes. We
-              evaluate both the technical and operational aspects of your
-              organization to identify gaps or areas that need improvement.
-            </p>
-          </div>
-        )}
-
-        {activeTab === 2 && (
-          <div className="text-center animate__animated animate__fadeInUp animate__delay-0.5s">
-            <FaCogs className="mx-auto text-warning mb-6" size={50} />
-            <h3 className="text-2xl font-bold font-roboto mb-4">
-              Implementation
-            </h3>
-            <p className="text-lg text-black mb-8">
-              After gaining a clear understanding of your needs and business
-              objectives, we move into the implementation phase. This is where
-              the strategy we’ve developed starts to take shape. Our experienced
-              team works hand-in-hand with you to ensure that each step of the
-              plan is executed flawlessly. We focus on clear communication and
-              seamless collaboration throughout the entire process, ensuring
-              that everyone involved is aligned and working toward the same
-              goal.
-            </p>
-            <p className="text-lg text-black mb-8">
-              Our team takes a methodical approach to implementation, starting
-              with setting up the necessary infrastructure, configuring your
-              systems, and deploying the right technologies tailored to your
-              needs. We prioritize efficiency, making sure that the project
-              stays on track with well-defined milestones and deadlines. Whether
-              it’s developing custom software, integrating new systems, or
-              optimizing existing infrastructure, we ensure that all components
-              are implemented with precision and care.
-            </p>
-          </div>
-        )}
-
-        {activeTab === 3 && (
-          <div className="text-center animate__animated animate__fadeInUp animate__delay-0.5s">
-            <FaHandsHelping className="mx-auto text-warning mb-6" size={50} />
-            <h3 className="text-2xl font-bold font-roboto mb-4">Support</h3>
-            <p className="text-lg text-black mb-8">
-              Our commitment to you doesn’t stop after implementation. We offer
-              continuous, proactive support to ensure that your systems remain
-              fully operational and optimized for the long term. Our dedicated
-              support team is always available to assist you with any issues,
-              updates, or changes that arise. We provide round-the-clock
-              monitoring, system health checks, and troubleshooting to address
-              potential problems before they affect your business operations.
-            </p>
-            <p className="text-lg text-black mb-8">
-              In addition to proactive monitoring, we regularly update your
-              systems to ensure they are running the latest security patches,
-              software versions, and performance optimizations. As technology
-              evolves, we ensure that your business stays ahead of the curve by
-              implementing the latest advancements and best practices. This
-              helps mitigate risks and maintain a secure, future-proof
-              infrastructure.
-            </p>
-          </div>
-        )}
-      </div>
-    </div>
   );
 };
 
