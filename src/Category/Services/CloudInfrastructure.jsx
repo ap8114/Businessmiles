@@ -7,7 +7,7 @@ const CloudInfrastructure = () => {
       style={{
         backgroundColor: "#f6f1e7", // matches light yellow/greyish section background
         padding: "60px 20px",
-        borderBottomLeftRadius: '40px',
+         borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px',
 
       }}
