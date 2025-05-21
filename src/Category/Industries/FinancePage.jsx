@@ -3,17 +3,22 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const FinancePage = () => {
   return (
-    <div style={{ backgroundColor: '#f5f0da', padding: '60px 0', fontFamily: 'Segoe UI, sans-serif' }}>
+        <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       {/* Intro Section */}
       <Container>
-        <Row style={{ borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px',    backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover'}} className='py-5'>
+        <Row style={{
+          borderBottomLeftRadius: '40px',
+          borderBottomRightRadius: '40px', backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+          backgroundSize: 'cover'
+        }} className='py-5'>
           <Col md={6}>
             <div style={{ borderLeft: '5px solid #f7a900', paddingLeft: '20px', marginBottom: '30px' }}>
-              <h2 style={{ color: '#292929', fontWeight: '700', fontSize: '2.2rem',  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent" }}>
+              <h2 style={{
+                color: '#292929', fontWeight: '700', fontSize: '2.2rem', background: "linear-gradient(to right, #FFD700, #333333)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent"
+              }}>
                 🔹 Finance & Insurance
               </h2>
               <p style={{ color: '#555', fontSize: '1.2rem' }}>

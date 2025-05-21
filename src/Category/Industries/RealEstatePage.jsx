@@ -11,11 +11,15 @@ const features = [
 
 const RealEstatePage = () => {
   return (
-    <div style={{ backgroundColor: '#f5f0da', paddingTop: '60px', fontFamily: 'Segoe UI, sans-serif' }}>
+        <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
       {/* Hero Section */}
-      <Container fluid style={{  borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px',   backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover'}} className='py-5'>
+      <Container fluid style={{
+        borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px', backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize: 'cover',
+        padding: '60px'
+      }} className='container'>
         <Row className="align-items-center">
           <Col md={1} style={{ borderLeft: '5px solid #f7a900', height: '100%' }}></Col>
           <Col md={11}>
@@ -24,9 +28,9 @@ const RealEstatePage = () => {
               fontWeight: '700',
               fontSize: '2.5rem',
               marginBottom: '10px',
-                background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent"
+              background: "linear-gradient(to right, #FFD700, #333333)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent"
             }}>
               🔹 Real Estate & Property Tech
             </h2>

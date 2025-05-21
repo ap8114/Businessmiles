@@ -3,24 +3,41 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 export default function WhoWeAre() {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#f9f4e6', color: '#333' }}>
-      {/* Hero Section */}
-      
-
-      {/* We Make Tech Simple */}
-      <Container className="py-5 text-center" style={{   borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px',  backgroundImage:'url("https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg")'}}>
-        <h2 style={{ fontWeight: 'bold' ,  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent"}}>We make technology simple.</h2>
-        <p className="mt-3">1. Consulting &nbsp;&nbsp; 2. Implementation &nbsp;&nbsp; 3. Support</p>
-        <p style={{ maxWidth: '800px', margin: '20px auto' }}>
-          As expert technical advisors, we decode the technology needs of your business and provide the roadmap, solutions, and support to move you forward. We make the complex simple — with clear strategies and measurable impact.
-        </p>
-      </Container>
+ <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px",  borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px'}}>
+  <Container
+    className="container text-center"
+    style={{
+      backgroundImage: 'url("https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      borderBottomLeftRadius: '40px',
+      borderBottomRightRadius: '40px',
+      padding: '60px 20px',
+      backgroundColor: '#f6f1e7',
+    }}
+  >
+    <h2
+      style={{
+        fontWeight: 'bold',
+        background: "linear-gradient(to right, #FFD700, #333333)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}
+    >
+      We make technology simple.
+    </h2>
+    <p className="mt-3">
+      1. Consulting &nbsp;&nbsp; 2. Implementation &nbsp;&nbsp; 3. Support
+    </p>
+    <p style={{ maxWidth: '800px', margin: '20px auto' }}>
+      As expert technical advisors, we decode the technology needs of your business and provide the roadmap, solutions, and support to move you forward. We make the complex simple — with clear strategies and measurable impact.
+    </p>
+  </Container>
 
       {/* Our Promise */}
-      <Container className="text-center py-4" style={{ backgroundColor: '#fffbe0' }}>
+      <Container className="text-center py-4" style={{ backgroundColor: '#f6f1e7', }}>
         <h3 className="mb-4">Our Promise</h3>
         <Row>
           {[

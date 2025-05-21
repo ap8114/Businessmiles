@@ -11,7 +11,7 @@ const blogPosts = [
 
 const BlogAndInsights = () => {
   return (
-    <div style={{ backgroundColor: '#fdfdfd', fontFamily: 'Segoe UI, sans-serif' }}>
+    <div style={{ backgroundColor: '#f6f1e7', fontFamily: 'Segoe UI, sans-serif' }}>
       {/* Header Section */}
       <div style={{
         backgroundColor: '#1a1a1a',

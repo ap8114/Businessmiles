@@ -3,14 +3,22 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 
 const LogisticsPage = () => {
   return (
-    <div style={{ backgroundColor: '#f5f0da', fontFamily: 'Arial, sans-serif', paddingBottom: '60px' }}>
+    <div style={{
+      fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px", borderBottomLeftRadius: '40px',
+      borderBottomRightRadius: '40px'
+    }}>
       {/* Header */}
-      <Container fluid style={{ backgroundColor: '#fff', padding: '60px 20px', textAlign: 'center', borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px',  backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover' }}>
-        <h2 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#292929',  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent" }}>
+      <Container fluid style={{
+        backgroundColor: '#fff', padding: '60px 20px', textAlign: 'center', borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px', backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize: 'cover'
+      }}
+      className='container'>
+        <h2 style={{
+          fontSize: '2.5rem', fontWeight: '700', color: '#292929', background: "linear-gradient(to right, #FFD700, #333333)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent"
+        }}>
           Boost your <span style={{ color: '#f7a900' }}>logistics</span> operations with
           <br />
           <span style={{ color: '#ffd600' }}>smarter</span> supply chain technology
@@ -85,7 +93,7 @@ const LogisticsPage = () => {
         <p style={{ fontSize: '1.2rem', color: '#292929' }}>
           We build logistics software that moves as fast as you do.
         </p>
-       
+
       </Container>
     </div>
   );

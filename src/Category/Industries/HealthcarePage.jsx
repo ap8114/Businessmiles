@@ -3,14 +3,22 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 const HealthcarePage = () => {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#fff', color: '#333' }}>
+    <div style={{
+      fontFamily: "Arial, sans-serif", backgroundColor: "#f6f1e7", padding: "60px 20px", borderBottomLeftRadius: '40px',
+      borderBottomRightRadius: '40px'
+    }}>
       {/* Header Section */}
-      <div style={{ backgroundColor: '#fcb900', padding: '60px 20px', textAlign: 'center', borderBottomLeftRadius: '40px',
-        borderBottomRightRadius: '40px',  backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
-        backgroundSize:'cover' }}>
-        <h1 style={{ color: '#000', fontWeight: 'bold',  background: "linear-gradient(to right, #FFD700, #333333)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent" }}>Healthcare & Life Sciences</h1>
+      <div style={{
+        backgroundColor: '#fcb900', padding: '60px 20px', textAlign: 'center', borderBottomLeftRadius: '40px',
+        borderBottomRightRadius: '40px', backgroundImage: "url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        backgroundSize: 'cover'
+      }}
+      className='container'>
+        <h1 style={{
+          color: '#000', fontWeight: 'bold', background: "linear-gradient(to right, #FFD700, #333333)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent"
+        }}>Healthcare & Life Sciences</h1>
         <p style={{ fontSize: '1.2rem', color: '#333' }}>
           Secure, compliant systems that improve care and efficiency.
         </p>
@@ -82,8 +90,8 @@ const HealthcarePage = () => {
           <h4 style={{ fontWeight: 'bold', marginBottom: '20px' }}>
             Your data stays safe. Your services stay accessible. Your patients stay satisfied.
           </h4>
-          
-        
+
+
         </div>
       </Container>
     </div>

@@ -5,14 +5,14 @@ const ITStrategySection = () => {
   return (
     <div
       style={{
-        backgroundColor: "#fff",
+        backgroundColor: "#f6f1e7",
         padding: "60px 0",
         color: "#333",
         fontFamily: "Segoe UI, sans-serif",
       }}
     >
       <Container>
-        <Row className="justify-content-center text-center mb-5 py-3" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
+        <Row className="justify-content-center text-center mb-5 py-5" style={{backgroundImage:"url('https://i.postimg.cc/0jYTdB4F/Whats-App-Image-2025-05-06-at-18-36-42-b9d628b8.jpg')",
         backgroundSize:'cover',        borderBottomLeftRadius: '40px',
         borderBottomRightRadius: '40px',}}>
           <Col lg={8}>
