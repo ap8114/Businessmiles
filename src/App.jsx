@@ -29,6 +29,7 @@ import CaseStudiesSpotlight from './Category/Resources/CaseStudiesSpotlight'
 import CybersecurityAlertsLight from './Category/Resources/CybersecurityAlertsLight'
 import IndustryReportsAndGuides from './Category/Resources/IndustryReportsAndGuides'
 import BlogAndInsights from './Category/Resources/BlogAndInsights'
+import ContactUs from './Components/HomePage/ContactUs'
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
    
    <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/contactus" element={<ContactUs />} />
     <Route path="/whoweare" element={<Whoweare/>} />
     <Route path="/customsoftwaredevelopment" element={<CustomSoftwareDevelopment/>} />
     

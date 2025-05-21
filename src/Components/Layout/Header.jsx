@@ -324,6 +324,7 @@ const Header = () => {
               </li>
             </ul>
             <div className="d-none d-lg-flex align-items-center gap-2">
+              <Link to="/contactus"> 
               <Button
                 variant="warning"
                 className="fw-normal px-2 py-0"
@@ -335,6 +336,7 @@ const Header = () => {
               >
                 Contact Us
               </Button>
+              </Link>
               <Button variant="light" className="border">
                 <FaSearch />
               </Button>
