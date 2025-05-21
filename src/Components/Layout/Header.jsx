@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { Container, Navbar, Button, Modal } from "react-bootstrap";
+import { Container, Navbar, Button, Modal, Row, Col, Collapse } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
   FaPhone,
@@ -8,23 +8,103 @@ import {
   FaBriefcase,
   FaSearch,
   FaBars,
+  FaTimes,
+  FaChevronDown,
+  FaChevronRight
 } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleModalToggle = () => setShowModal(!showModal);
 
+  // Mobile menu accordion toggle
+  const toggleMobileDropdown = (dropdownId) => {
+    setActiveDropdown(activeDropdown === dropdownId ? null : dropdownId);
+  };
+
+  // Nav links data structure for easier management
+  const navLinks = [
+    {
+      id: "whoweare",
+      title: "Who We Are",
+      link: "/whoweare",
+      isDropdown: false
+    },
+    {
+      id: "services",
+      title: "Services",
+      isDropdown: true,
+      items: [
+        { title: "Custom Software Development", link: "/customsoftwaredevelopment" },
+        { title: "Cloud Infrastructure & DevOps", link: "/CloudInfrastructure" },
+        { title: "Web & E-Commerce Development", link: "/WebECommerceDevelopment" },
+        { title: "Digital Marketing & Growth Strategy", link: "/DigitalMarketing" },
+        { title: "Technology & Business Consulting", link: "/ConsultingPage" },
+        { title: "End-to-End Support", link: "/EndToEndSupport" }
+      ]
+    },
+    {
+      id: "consulting",
+      title: "Consulting",
+      isDropdown: true,
+      items: [
+        { title: "IT Strategy & Roadmapping", link: "/ITStrategySection" },
+        { title: "Cloud & Infrastructure Consulting", link: "/CloudConsulting" },
+        { title: "Cybersecurity & Compliance Advisory", link: "/CyberSecurityAdvisory" },
+        { title: "Digital Transformation Consulting", link: "/DigitalTransformationConsulting" },
+        { title: "Feasibility Consulting", link: "/FeasibilityConsultingPageAlt" }
+      ]
+    },
+    {
+      id: "industries",
+      title: "Industries",
+      isDropdown: true,
+      items: [
+        { title: "Healthcare & Life Sciences", link: "/HealthcarePage" },
+        { title: "Logistics & Supply Chain", link: "/LogisticsPage" },
+        { title: "Finance & Insurance", link: "/FinancePage" },
+        { title: "Real Estate & Property Tech", link: "/RealEstatePage" },
+        { title: "Retail & E-Commerce", link: "/RetailEcommercePage" },
+        { title: "Construction & Contracting", link: "/ConstructionContractingPage" },
+        { title: "Education & E-Learning", link: "/EducationELearningPage" },
+        { title: "Legal & Professional Services", link: "/LegalServicesPage" }
+      ]
+    },
+    {
+      id: "resources",
+      title: "Resources",
+      isDropdown: true,
+      items: [
+        { title: "Case Studies", link: "/CaseStudiesSpotlight" },
+        { title: "Cybersecurity Alerts", link: "/CybersecurityAlertsLight" },
+        { title: "Industry Reports & Trend Guides", link: "/IndustryReportsAndGuides" },
+        { title: "Blog & Insights", link: "/BlogAndInsights" }
+      ]
+    }
+  ];
+
   return (
-    <div className="border-bottom bg-white shadow-sm m-0 p-0 w-100 ">
-      <Container fluid className="p-0">
+    <div className={`border-bottom bg-white shadow-sm m-0 p-0 w-100 position-sticky top-0 z-3 ${scrolled ? 'scrolled' : ''}`}>
+      <Container fluid className="px-0 px-md-3">
         {/* Top Right Row */}
-        <div className="d-none d-lg-flex justify-content-end gap-4 py-2">
+        <div className="d-none d-lg-flex justify-content-end gap-3 py-2">
           <div className="text-dark fw-semibold d-flex align-items-center">
             <FaPhone className="me-2" />
-            866-916-7414
+            <a href="tel:866-916-7414" className="text-dark text-decoration-none">866-916-7414</a>
           </div>
           <div className="text-dark fw-semibold d-flex align-items-center">
             <FaSignInAlt className="me-2" />
@@ -41,464 +121,196 @@ const Header = () => {
         </div>
 
         {/* Navbar */}
-        <Navbar bg="white" className="py-2 px-0 navbar-shadow">
-          <div className="d-flex flex-wrap w-100 align-items-center justify-content-between">
-            {/* Logo */}
-            <Link to="/" className="no-underline">
-              <div
-                className="d-flex align-items-center"
-                style={{ width: "200px", height: "40px" }}
-              >
-                <img
-                  src="https://i.postimg.cc/FFdgkZkb/Screenshot-2025-05-06-184748.png"
-                  alt="Logo"
-                  height="50"
-                  className="me-2 mb-5"
-                />
-              </div>
-            </Link>
-
-            {/* Nav Items (Desktop) */}
-            <ul className="nav gap-4 mx-auto d-none d-lg-flex">
-              <li className="nav-item">
-                <Link to="/whoweare" className="nav-link text-dark fw-normal">
-                  Who We Are
+        <Navbar bg="white" expand={false} className="py-2 px-2 px-md-0 navbar-shadow">
+          <Container fluid className="p-0">
+            <Row className="w-100 mx-0 align-items-center">
+              <Col xs="auto" className="px-0">
+                {/* Logo */}
+                <Link to="/" className="no-underline">
+                  <div className="d-flex align-items-center" style={{ height: "40px" }}>
+                    <img
+                      src="https://i.postimg.cc/FFdgkZkb/Screenshot-2025-05-06-184748.png"
+                      alt="Logo"
+                      height="50"
+                      className="me-2 mb-2"
+                      style={{ maxWidth: "180px", objectFit: "contain" }}
+                    />
+                  </div>
                 </Link>
-              </li>
+              </Col>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle text-dark fw-normal"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link
-                      to="/customsoftwaredevelopment"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Custom Software Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="./CloudInfrastructure"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Cloud Infrastructure & DevOps
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/WebECommerceDevelopment"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Web & E-Commerce Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/DigitalMarketing"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Digital Marketing & Growth Strategy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/ConsultingPage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Technology & Business Consulting
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/EndToEndSupport"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      End-to-End Support
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle text-dark fw-normal"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                >
-                  Consulting
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link
-                      to="/ITStrategySection"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      IT Strategy & Roadmapping
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/CloudConsulting"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Cloud & Infrastructure Consulting
-                    </Link>
-                  </li>
-                
-                      <li>
-                        <Link
-                          to="/CyberSecurityAdvisory"
-                          className="dropdown-item"
-                          href="#"
-                        >
-                          Cybersecurity & Compliance Advisory
+              {/* Desktop Navigation */}
+              <Col className="d-none d-lg-block">
+                <ul className="nav justify-content-center">
+                  {navLinks.map((navItem) => (
+                    <li key={navItem.id} className="nav-item mx-1">
+                      {navItem.isDropdown ? (
+                        <div className="dropdown">
+                          <a
+                            className="nav-link dropdown-toggle text-dark fw-normal"
+                            href="#"
+                            id={`${navItem.id}Dropdown`}
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            {navItem.title}
+                          </a>
+                          <ul className="dropdown-menu dropdown-menu-end">
+                            {navItem.items.map((item, idx) => (
+                              <li key={idx}>
+                                <Link
+                                  to={item.link}
+                                  className="dropdown-item"
+                                >
+                                  {item.title}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ) : (
+                        <Link to={navItem.link} className="nav-link text-dark fw-normal">
+                          {navItem.title}
                         </Link>
-                      </li>
-                    
-                  
-                  <li>
-                    <Link
-                      to="/DigitalTransformationConsulting"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Digital Transformation Consulting
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/FeasibilityConsultingPageAlt"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      FeasibilityConsultingPageAlt
-                    </Link>
-                  </li>
+                      )}
+                    </li>
+                  ))}
                 </ul>
-              </li>
+              </Col>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle text-dark fw-normal"
-                  href="#"
-                  data-bs-toggle="dropdown"
+              {/* Right side buttons */}
+              <Col xs="auto" className="ms-auto d-flex align-items-center gap-2 px-0">
+                <Link to="/contactus" className="d-none d-sm-block"> 
+                  <Button
+                    variant="warning"
+                    className="fw-normal px-3 py-1"
+                    style={{
+                      background: "linear-gradient(to right, #FFD700, #FF8C00)",
+                      border: "none",
+                      color: "#333",
+                    }}
+                  >
+                    Contact Us
+                  </Button>
+                </Link>
+                <Button variant="light" className="border p-1 d-none d-sm-block">
+                  <FaSearch />
+                </Button>
+
+                {/* Hamburger for mobile */}
+                <Button
+                  className="d-lg-none position-relative border-0 bg-transparent p-1"
+                  onClick={handleModalToggle}
                 >
-                  Industries
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link
-                      to="/HealthcarePage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Healthcare & Life Sciences
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/LogisticsPage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Logistics & Supply Chain
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/FinancePage" className="dropdown-item" href="#">
-                      Finance & Insurance
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/RealEstatePage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Real Estate & Property Tech
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/RetailEcommercePage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Retail & E-Commerce
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/ConstructionContractingPage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Construction & Contracting
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/EducationELearningPage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Education & E-Learning
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/LegalServicesPage"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Legal & Professional Services
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle text-dark fw-normal"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                >
-                  Resources
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link
-                      to="/CaseStudiesSpotlight"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Case Studies
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/CybersecurityAlertsLight"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Cybersecurity Alerts
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/IndustryReportsAndGuides"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Industry Reports & Trend Guides
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/BlogAndInsights"
-                      className="dropdown-item"
-                      href="#"
-                    >
-                      Blog & Insights
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div className="d-none d-lg-flex align-items-center gap-2">
-              <Link to="/contactus"> 
-              <Button
-                variant="warning"
-                className="fw-normal px-2 py-0"
-                style={{
-                  background: "linear-gradient(to right, #FFD700, #FF8C00)",
-                  border: "none",
-                  color: "#333",
-                }}
-              >
-                Contact Us
-              </Button>
-              </Link>
-              <Button variant="light" className="border">
-                <FaSearch />
-              </Button>
-            </div>
-
-            {/* Hamburger for mobile only */}
-            <Button
-              className="d-lg-none position-relative border-0 bg-transparent"
-              onClick={handleModalToggle}
-            >
-              <FaBars size={26} className="text-dark" />
-            </Button>
-          </div>
+                  <FaBars size={24} className="text-dark" />
+                </Button>
+              </Col>
+            </Row>
+          </Container>
         </Navbar>
 
-        {/* Mobile Modal Menu */}
-        <Modal show={showModal} onHide={handleModalToggle}>
-          <Modal.Header closeButton>
-            <Modal.Title>Menu</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <ul className="list-unstyled">
-              <li>
-                <Link
-                  to="/Whoweare"
-                  className="text-dark d-block py-2 fw-semibold text-decoration-none"
-                >
-                  Who We Are
+        {/* Mobile Menu Modal */}
+        <Modal 
+          show={showModal} 
+          onHide={handleModalToggle} 
+          fullscreen="md-down"
+          className="mobile-menu-modal"
+        >
+          <Modal.Header className="border-0">
+            <Modal.Title className="w-100">
+              <div className="d-flex justify-content-between align-items-center">
+                <Link to="/" onClick={handleModalToggle}>
+                  <img
+                    src="https://i.postimg.cc/FFdgkZkb/Screenshot-2025-05-06-184748.png"
+                    alt="Logo"
+                    height="40"
+                    style={{ maxWidth: "150px", objectFit: "contain" }}
+                  />
                 </Link>
-              </li>
-
-              <li>
-                <a
-                  className="text-dark fw-bold d-block py-2 text-decoration-none"
-                  data-bs-toggle="collapse"
-                  href="#servicesCollapse"
-                >
-                  Services
-                </a>
-                <div className="collapse" id="servicesCollapse">
-                  <ul className="list-unstyled ps-3">
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Managed IT Services
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        IT Support
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Co-Managed IT Services
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Software Development
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Custom Websites
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Digital Marketing
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Cloud Computing & Migrations
-                      </a>
-                    </li>
-                  </ul>
+                <Button variant="transparent" onClick={handleModalToggle} className="border-0 p-0">
+                  <FaTimes size={24} />
+                </Button>
+              </div>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body className="pt-0">
+            <div className="mb-4">
+              <div className="d-flex justify-content-between">
+                <div className="d-flex align-items-center text-dark">
+                  <FaPhone className="me-2" />
+                  <a href="tel:866-916-7414" className="text-dark text-decoration-none">866-916-7414</a>
                 </div>
-              </li>
-
-              <li>
-                <a
-                  className="text-dark fw-bold d-block py-2 text-decoration-none"
-                  data-bs-toggle="collapse"
-                  href="#consultingCollapse"
-                >
-                  Consulting
-                </a>
-                <div className="collapse" id="consultingCollapse">
-                  <ul className="list-unstyled ps-3">
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Consulting 1
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Consulting 2
-                      </a>
-                    </li>
-                  </ul>
+                <div className="d-flex align-items-center text-dark">
+                  <FaSignInAlt className="me-2" />
+                  <a href="#" className="text-dark text-decoration-none">Login</a>
                 </div>
-              </li>
-
-              <li>
-                <a
-                  className="text-dark fw-bold d-block py-2 text-decoration-none"
-                  data-bs-toggle="collapse"
-                  href="#industriesCollapse"
-                >
-                  Industries
-                </a>
-                <div className="collapse" id="industriesCollapse">
-                  <ul className="list-unstyled ps-3">
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Industry 1
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Industry 2
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <a
-                  className="text-dark fw-bold d-block py-2 text-decoration-none"
-                  data-bs-toggle="collapse"
-                  href="#resourcesCollapse"
-                >
-                  Resources
-                </a>
-                <div className="collapse" id="resourcesCollapse">
-                  <ul className="list-unstyled ps-3">
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-dark d-block py-1">
-                        Whitepapers
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li className="mt-3">
+              </div>
+            </div>
+            
+                          {/* Mobile Nav Links */}
+            <ul className="list-unstyled mb-4">
+              {navLinks.map((navItem) => (
+                <li key={navItem.id} className="border-bottom py-2">
+                  {navItem.isDropdown ? (
+                    <>
+                      <div 
+                        className="d-flex justify-content-between align-items-center cursor-pointer py-2"
+                        onClick={() => toggleMobileDropdown(navItem.id)}
+                      >
+                        <span className="fw-semibold">{navItem.title}</span>
+                        {activeDropdown === navItem.id ? <FaChevronDown /> : <FaChevronRight />}
+                      </div>
+                      
+                      <Collapse in={activeDropdown === navItem.id}>
+                        <div>
+                          <ul className="styled-none ps-3 pt-2">
+                            {navItem.items.map((item, idx) => (
+                              <li key={idx} className="py-1">
+                                <Link 
+                                  to={item.link} 
+                                  className="text-dark d-block" 
+                                  onClick={handleModalToggle}
+                                >
+                                  {item.title}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </Collapse>
+                    </>
+                  ) : (
+                    <Link 
+                      to={navItem.link} 
+                      className="text-dark fw-semibold d-block py-2" 
+                      onClick={handleModalToggle}
+                    >
+                      {navItem.title}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+            
+            <div className="d-grid gap-2">
+              <Link to="/contactus" onClick={handleModalToggle}>
                 <Button
                   variant="warning"
                   className="w-100 fw-normal"
-                  style={{ backgroundColor: "#FADD8F" }}
+                  style={{
+                    background: "linear-gradient(to right, #FFD700, #FF8C00)",
+                    border: "none",
+                    color: "#333",
+                  }}
                 >
                   Contact Us
                 </Button>
-              </li>
-            </ul>
+              </Link>
+              <Button variant="light" className="w-100 border">
+                <FaSearch className="me-2" /> Search
+              </Button>
+            </div>
           </Modal.Body>
         </Modal>
       </Container>
